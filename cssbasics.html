@@ -5,14 +5,26 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+
+<style>
+    #outerdiv{
+        width: 500px;
+        height: 500px;
+        background-color: orange;
+    }
+    #innerdiv{
+        width: 100px;
+        height: 100px;
+        background-color: red;
+        top:50%;
+        left:50%;
+        position: relative;
+    }
+</style>
 </head>
 <body>
-    <div>
-        <h1 style="color:blue">Hello World!</h1>
-        <p>
-            Lorem 
-            ipsum, or lipsum as it is sometimes known, is dummy text used in laying out print, graphic or web designs. The passage is attributed to an unknownLorem ipsum, or lipsum as it is sometimes known, is dummy text used in laying out print, graphic or web designs. The passage is attributed to an unknownLorem ipsum, or lipsum as it is sometimes known, is dummy text used in laying out print, graphic or web designs. The passage is attributed to an unknown.
-        </p>
+    <div id="outerdiv">
+        <div id="innerdiv"></div>
     </div>
 </body>
 </html>
