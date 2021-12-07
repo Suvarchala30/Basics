@@ -1,0 +1,24 @@
+body{
+    padding: 1em;
+    display: flex;
+    align-content: center;
+}
+table{
+    width:100%;
+    max-width:1200px;
+text-align: center;
+border-spacing: 0;
+overflow: hidden;
+border-radius: 20px;
+}
+th{
+    background-color: navy;
+    color: white;
+    text-transform: uppercase;
+}
+tr:nth-child(odd){
+    background-color: #e7e7e7;
+}
+th,td{
+    padding: 8px;;
+}
