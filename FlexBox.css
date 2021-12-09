@@ -5,6 +5,12 @@ body{
     display: flex;/*responsivenness*/
     background-color: blueviolet;
     flex-direction:row;
+    /* flex-wrap: nowrap; */
+    align-items: center;
+    justify-content: space-evenly;
+  }
+  .card1 .card2 .card3{
+    flex: 1;
   }
   /* .card1 .card2{
     flex-shrink: 0;
@@ -12,7 +18,11 @@ body{
   .card3{
     flex-grow: 1;
   } */
+  .card1{
+    height: 200px;
+  }
   .card{
+    width:250px;
     border: 2px solid black;
     border-radius: 4px;
     margin: 10px;
