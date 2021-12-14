@@ -185,12 +185,17 @@ hr{
 p{
     color: darkslategrey;
     line-height: 2;
-    font-size: 10px;
+    font-size: 8px;
 }
 
 .skill-row a{
     color: #66bfbf;
     text-decoration: none;
-    font-size: 12px;
+    font-size: 10px;
+}
+
+.contact-message{
+    width: 60%;
+    margin: 40px auto 60px auto;
 }
 }
