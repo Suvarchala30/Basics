@@ -114,3 +114,83 @@ a {
 .bottom-container a:hover{
     color: white;
 }
+
+
+
+@media screen and (max-width:576px){
+    
+h1{
+    font-family: "Sacramento",cursive;
+    font-size: 3em;
+    color: #66bfbf;
+    font-weight: bold;
+}
+
+h2{
+    color: #66bfbf;
+    font-family: "Montserrat", sans-serif;
+    font-size: 1.5em;
+    font-weight: normal;
+    padding-bottom: 5px;
+}
+.cloud1, .cloud2{
+    width: 100px;
+}
+
+.top-container{
+    background-color: azure;
+    position: relative;
+    padding-top: 50px;
+}
+.mountain{
+    width: 200px;
+}
+
+.middle-container{
+    margin: 20px 0px;
+}
+
+.intro{
+    margin: auto;
+    width: 50%;
+    color: darkslategrey;
+    margin-bottom: 10px;
+}
+.profile-image .myimg{
+    width: 150px;
+    border-radius: 50%;
+    margin-top: 50px;
+}
+
+hr{
+    border: dotted #EAF6F6 6px;
+    width: 4%;
+    margin: 40px auto;
+    border-bottom: none;
+}
+
+.skill-row{
+    width: 80%;
+    margin: 50px auto 50px auto;
+    text-align: left;
+    padding-bottom: 50px;
+}
+
+.code-img{
+    width: 30%;
+    float: left;
+    margin-right: 30px;
+}
+
+p{
+    color: darkslategrey;
+    line-height: 2;
+    font-size: 10px;
+}
+
+.skill-row a{
+    color: #66bfbf;
+    text-decoration: none;
+    font-size: 12px;
+}
+}
