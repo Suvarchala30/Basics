@@ -17,6 +17,100 @@ h2{
     font-weight: normal;
     padding-bottom: 10px;
 }
-.banner{
+.top-container{
     background-color: azure;
+    position: relative;
+    padding-top: 100px;
+}
+.profile-image .myimg{
+    width: 200px;
+    border-radius: 50%;
+    margin-top: 100px;
+}
+.intro{
+    margin: auto;
+    width: 30%;
+    color: darkslategrey;
+    margin-bottom: 100px;
+}
+hr{
+    border: dotted #EAF6F6 6px;
+    width: 4%;
+    margin: 100px auto;
+    border-bottom: none;
+}
+h3{
+    color: #11999e;
+    font-family: "Montserrat", sans-serif;
+}
+.skill-row{
+    width: 50%;
+    margin: 100px auto 100px auto;
+    text-align: left;
+    padding-bottom: 50px;
+}
+p{
+    color: darkslategrey;
+    line-height: 2;
+}
+.code-img{
+    width: 25%;
+    float: left;
+    margin-right: 30px;
+}
+.social-img{
+    width: 25%;
+    float: right;
+    margin-left: 30px;
+}
+.skill-row a{
+    color: #66bfbf;
+    text-decoration: none;
+}
+.skill-row a:hover{
+    text-decoration: underline;
+}
+.contact-message{
+    width: 40%;
+    margin: 40px auto 60px auto;
+}
+.form{
+    color: darkslategray;
+    margin-top: 50px;
+    
+}
+input,textarea{
+    border: 1px solid darkslategray;
+    width: 200px;
+    margin-left: 30px;
+    
+}
+.btn{
+    background-color: #11cdd4;
+    padding: 10px 20px;
+    margin: 30px;
+    border-radius: 5px;
+    font-size: 20px;
+    text-decoration: none;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+}
+.btn:hover{
+    color: #11cdd4;
+}
+.middle-container{
+    margin: 100px 0px;
+}
+.bottom-container{
+    padding: 50px 0px 20px 0px;
+    background-color: #66BFBF;
+}
+a {
+    color: #11999E;
+    font-family: 'Montserrat', sans-serif;
+    margin: 10px 20px;
+    text-decoration: none;
+}
+.bottom-container a:hover{
+    color: white;
 }
