@@ -1,3 +1,6 @@
+body {
+    font-family: "Montserrat";
+}
 .red-section{
     background-color: #ff4c68;
     color: white;
@@ -54,7 +57,7 @@
     position: relative;
     background-color: white;
 }
-.fas{
+.icon{
     font-size: 4em;
         color: #ef8172;
         margin-bottom: 1rem;
@@ -111,6 +114,45 @@ em{
         margin: 20px 20px 50px;
     
 }
+.white-section{
+    text-align: center;
+    padding: 7%;
+}
+
+.card-button{
+    width: 100%;
+}
+
+.pink-section{
+    background-color: #ff4c68;
+    text-align: center;
+    padding: 7% 15%;
+}
+
+.last-section{
+    text-align: center;
+    padding: 7% 15%;
+}
+.social{
+    margin:20px 10px;
+}
+.pricing-column{
+    padding: 3% 2%;
+}
+h1,h2,h3,h4,h5,h6{
+    font-family: "Montserrat-Bold";
+}
+p{
+    color: #8f8f8f;
+}
+
+
+
+
+
+
+
+
 @media screen and (max-width:1024px){
     h1.big-heading {
     font-size:1.5rem;
@@ -144,7 +186,7 @@ em{
     #title{
         text-align:center;
     }
-    .fas{
+    .icon{
         font-size:1.5em;
     }
     #features h2{
