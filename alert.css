@@ -1,0 +1,22 @@
+.alert{
+    margin: 20px;
+    padding: 20px;
+}
+.badge{
+    color: black;
+    margin-top: 5px;
+}
+.cart-button{
+    background-color: white;
+    border: none;
+}
+.carousel-control-prev{
+    left: -105px;
+}
+.carousel-control-next{
+    right: -105px;
+}
+.img-carousel{
+    height: 30%;
+    margin-bottom: 30px;
+}
