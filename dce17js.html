@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        var a;
+console.log("The value of a is",a);//undefined
+console.log("typeof(a) is",typeof(a));//typeof undefined = undefined
+a=10;
+console.log("The value of a is",a);//Integer
+console.log("typeof(a) is",typeof(a));//typeof 
+
+a="aa";//initialisation
+console.log("The value of a is",a);//string
+console.log("typeof(a) is",typeof(a));//typeof 
+
+var a=0.5;//re-declareation
+console.log("The value of a is",a);//number
+console.log("typeof(a) is",typeof(a));//typeof 
+
+a=true;
+console.log("The value of a is",a);//boolean
+console.log("typeof(a) is",typeof(a));//typeof 
+
+//condition
+if(a==2){
+    console.log("TRUE");
+}else{
+    console.log("FALSE");
+}
+
+//ternary operator
+console.log(a ? 'tRue':'false');
+
+a=null;
+console.log("The value of a is",a);//undefined
+console.log("typeof(a) is",typeof(a));//typeof 
+console.log(a?'tRUe':'FSlse')
+/* Boolean
+if number 
+non-zero is true, zero is false
+
+if string
+empty string is false , any string is true
+
+typeof(null) is object
+
+== equal
+=== equal+type same
+1,true => true
+0,false => flase
+ */
+
+ a=1;
+ console.log(a==true?'TRUE':'FAlse')
+    </script>
+</head>
+<body>
+    <h1>Learning javascript</h1>
+</body>
+</html>
