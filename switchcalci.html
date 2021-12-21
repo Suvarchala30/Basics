@@ -10,25 +10,32 @@
             var x=Number(document.getElementById("n1").value);
             var y=Number(document.getElementById("n2").value);
             var z=document.getElementById("sym").value;
+            var a=document.getElementById("ans").value;
             if(x=="" || y==""){
-                window.alert("Please enter number")
-                document.getElementById("ans").innerHTML="Number not entered";
-            }else 
-            if(z=="+"){
+                window.alert("Please enter number");
+                
+            }
+            switch(z){
+                case '+':  
                 var o=x+y;
-                document.getElementById("ans").innerHTML=o;
-            }
-            else if(z=="-"){
+                document.getElementById("ans").value=o;
+                break;
+                case '-': 
                 var o=x-y;
-                document.getElementById("ans").innerHTML=o;
-            }else if(z=="*"){
+                document.getElementById("ans").value=o;
+                break;
+                case '*':
                 var o=x*y;
-                document.getElementById("ans").innerHTML=o;
-            }else{
+                document.getElementById("ans").value=o;
+                break;
+                case '/':
                 var o=x/y;
-                document.getElementById("ans").innerHTML=o;
-            }
+                document.getElementById("ans").value=o;
+                break;
+                default: 
+                break;
         }
+    }
     </script>
     <style>
         body{
@@ -42,12 +49,6 @@
         }
         select,button{
             margin: 0 10px;
-        }
-        #ans{
-            height: 20px;
-            width: 150px;
-            border: 1px solid darkgray;
-            border-radius: 3px;
         }
     </style>
 </head>
@@ -63,7 +64,7 @@
     </select>
     <input type="number" id="n2" placeholder="Enter 2nd number">
     <button onclick="f1()">=</button>
-    <div id="ans"></div>
+    <input type="number" id="ans" placeholder="Result">
    
 </div>
 </body>
