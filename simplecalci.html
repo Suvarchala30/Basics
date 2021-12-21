@@ -26,8 +26,30 @@
             }
         }
     </script>
+    <style>
+        body{
+            text-align: center;
+        }
+        .main{
+            display: flex;
+            text-align: center;
+            justify-content: center;
+            align-items: center;
+        }
+        select,button{
+            margin: 0 10px;
+        }
+        #ans{
+            height: 20px;
+            width: 150px;
+            border: 1px solid darkgray;
+            border-radius: 3px;
+        }
+    </style>
 </head>
 <body>
+    <h1>Simple Arithmetic Calculator</h1>
+    <div class="main">
     <input type="number" id="n1" placeholder="Enter 1st number">
     <select name="operator" id="sym">
         <option value="+">+</option>
@@ -37,6 +59,7 @@
     </select>
     <input type="number" id="n2" placeholder="Enter 2nd number">
     <button onclick="f1()">=</button>
-    <input type="number" id="ans">
+    <div id="ans"></div>
+</div>
 </body>
 </html>
