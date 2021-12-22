@@ -1,4 +1,6 @@
-let x=2;
-let y=5;
-let z=x|y;
-console.log(~z)
+
+var button = document.getElementById("clk")
+function calculate(){
+    document.getElementById("res").innerHTML="Hi Suvarchala"
+}
+button.addEventListener("click",calculate)
