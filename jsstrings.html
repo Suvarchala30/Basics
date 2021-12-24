@@ -8,7 +8,7 @@
 </head>
 <body>
     <script>
-        let a="suvarchalareddy";
+        let a="suvarchsalareddhy";
         document.write("\n",a)
         document.write("<br>",typeof(a))
 
@@ -25,7 +25,31 @@
 
         document.write("<br>",a.length)
         document.write("<br>",a.indexOf('h'))
+        document.write("<br>",a.lastIndexOf('h'))
     document.write("<br>",a.valueOf())
+    document.write("<br>",a.toUpperCase())
+        document.write("<br>",a.toLowerCase())
+        document.write("<br>",a.includes("ll"))
+        document.write("<br>",a.startsWith("u"))
+        document.write("<br>",a.endsWith("y"))
+        document.write("<br>",a.replace('s','c'))
+        document.write("<br>",a.replaceAll('s','c'))
+        document.write("<br>",a[0])
+        document.write("<br>",a.charAt(8))
+        document.write("<br>",a.charCodeAt(8))
+
+        let x="Javascript is fantastic, and is definitely a good programming language to start with. This is IS good!";
+document.write("<br>",x.indexOf('is', x.indexOf('is')+1))
+        let y=x.match(/is/g)
+        document.write("<br>",y)
+        let z=x.match(/is/gi)
+        document.write("<br>",z)
+        let g=x.search(/is/gi)
+        document.write("<br>",g)
+        document.write("<br>",a.concat(b))
+        document.write("<br>",x.substr(7,8))
+        document.write("<br>",x.substring(7,8))
+        document.write("<br>",x.slice(7,8))
     </script>
 </body>
 </html>

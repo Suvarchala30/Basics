@@ -53,6 +53,7 @@ body{
 }
 .panel.active{
     flex:5;
+    transition: 500ms;
 }
 .panel.active h3{
     opacity: 1;
