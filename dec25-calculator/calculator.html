@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css" class="css">
+</head>
+<body>
+    <div class="container">
+        <div id="display"></div>
+        <div class="buttons">
+            <div class="btn" onclick="clearxyz()">C</div>
+            <div class="btn" onclick="clickxyz('/')">/</div>
+            <div class="btn" onclick="clickxyz('*')">*</div>
+            <div class="btn" onclick="backxyz()">&larr;</div>
+
+            <div class="btn" onclick="clickxyz('7')">7</div>
+            <div class="btn" onclick="clickxyz('8')">8</div>
+            <div class="btn" onclick="clickxyz('9')">9</div>
+            <div class="btn" onclick="clickxyz('-')">-</div>
+
+            <div class="btn" onclick="clickxyz('4')">4</div>
+            <div class="btn" onclick="clickxyz('5')">5</div>
+            <div class="btn" onclick="clickxyz('6')">6</div>
+            <div class="btn" onclick="clickxyz('+')">+</div>
+
+            <div class="btn" onclick="clickxyz('1')">1</div>
+            <div class="btn" onclick="clickxyz('2')">2</div>
+            <div class="btn" onclick="clickxyz('3')">3</div>
+            <div class="btn" onclick="clickxyz('.')">.</div>
+
+            <div class="btn" onclick="clickxyz('(')">(</div>
+            <div class="btn btn0" onclick="clickxyz('0')">0</div>
+            <div class="btn" onclick="clickxyz('(')">)</div>
+            <div class="btn equal" onclick="submitxyz()">=</div>
+
+        </div>
+    </div>
+
+
+
+    <script src="script.js"></script>
+</body>
+</html>
