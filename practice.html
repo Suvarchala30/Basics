@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+
+let str="string";
+let x=str.length-1;
+document.write(x)
+document.write("<br>")
+let arr=[1,2,3,4,50];
+let y=arr[arr.length-1]
+document.write(y)
+document.write("<br>")
+function palindrome(str) {
+    // your code here!
+    str="raceCAR";
+    let xx="";
+    for(let i=str.length-1;i>=0;i--){
+      xx=xx+str[i];
+    }
+    str=str.toLowerCase();
+    xx=xx.toLowerCase();
+    if(str==xx){
+      document.write("true")
+    }
+    else{
+      document.write("false")
+    }
+    
+    //code end. don't edit anything below
+  }
+palindrome();
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

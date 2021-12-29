@@ -1,6 +1,5 @@
 let displayxyz=document.getElementById("display");
 let buttonxyz=document.getElementsByClassName("btn");
-let buttonsxyz=Number(document.getElementsByClassName("btn0"))
 
 function isOpxyz(opxyz){
     if(opxyz==="+" || opxyz==='-' || opxyz==='/' || opxyz==='*')
@@ -11,7 +10,7 @@ function isOpxyz(opxyz){
 function clickxyz(clickedxyz){
     if(displayxyz.innerText===""){
         if(clickedxyz!='0'){
-            displayxyz.innerText = displayxyz.innerText+clickedxyz
+            displayxyz.innerText = displayxyz.innerText+clickedxyz;
         }
     }else{
 
