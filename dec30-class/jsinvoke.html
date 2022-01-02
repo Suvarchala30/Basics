@@ -5,8 +5,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>JS Self invoke function</title>
+    <script>
+        (function abc(){
+            console.log('abc')
+        })() //no need to call i.e., self invoking
+        //abc()
+    </script>
 </head>
 <body>
-    
+    (function(){})()
 </body>
 </html>

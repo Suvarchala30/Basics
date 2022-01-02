@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment</title>
+    <script>
+        let userinput=prompt('Enter a String')
+        userinput=userinput.toLowerCase();
+        const capital=() => {
+            if(userinput!==isNaN()){
+            return userinput[0].toUpperCase()+userinput.slice(1,(userinput.length));//slice(1) can also be given
+            }else{
+                return 'Please enter a string'
+            }
+        }
+        console.log(capital())
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
