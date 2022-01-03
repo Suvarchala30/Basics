@@ -21,3 +21,4 @@ function fibonacci(n){
 for(let i=0;i<=7;i++){ //if we want the entire series use for loop 
 console.log(fibonacci(i))
 }
+
