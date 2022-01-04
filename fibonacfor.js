@@ -6,7 +6,9 @@ for(let i=2;i<=num;i++){
     z=x+y;
     x=y;
     y=z;
-    console.log(z)
+    //console.log(z) if we print here entire sequence is printed
 }
+
+console.log(z)
 }
 fibonacci(8)
