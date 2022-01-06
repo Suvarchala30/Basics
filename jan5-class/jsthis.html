@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS This</title>
+    <script>
+        let sukanya={
+            batch:'Batch 11',
+            isPresent:true,
+            friends:['abc','xyz','you'],
+            xyz:function (){
+                console.log('xyz')
+            },
+            hi:()=>{
+                console.log('Hi')
+            },
+            hello:(name) => {
+                console.log('Hello ' +name)
+            },
+            abc: (names) => console.log(names)
+        
+        }
+        sukanya.xyz()
+        sukanya.hi()
+        sukanya.hello('Suvarchala')
+        sukanya.abc('Samaritan')
+
+
+        let apple={
+            firstname:'Apple',
+            lastname:'Shimla',
+            nooffruitspertree:3,
+            nooftreesinarea:5,
+            display: () => {
+                console.log(apple.firstname+' '+apple.lastname) //gives output but not recommended to do this
+            }
+        }
+            apple.display()
+
+
+            let orange={
+            firstname:'Orange',
+            lastname:'Kerela',
+            nooffruitspertree:3,
+            nooftreesinarea:5,
+            display: function() {
+                console.log(this.firstname +' '+ this.lastname)
+                console.log(this)//prints entire object
+            }
+        }
+            orange.display()
+            
+            //console.log(this)- Returns entire window
+
+            //this keyword refers to parent or owner of specific method
+//this keyword doesn't work in arrow functions
+
+        /*Properties and methods :
+        Properties: batch,isPresent,friends
+        Methods: xyz
+        */
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

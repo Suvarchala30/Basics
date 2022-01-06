@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Objects</title>
+    <script>
+        let myobject={
+            class:'batch-11',
+            course:'FE Dev',
+            techstack:'Mern',
+            address:{
+    addressline1: 'House no.1',
+    addressline2: 'colony',
+    addressline3:'area',
+    addressline4:'Hyd',
+    addressline5:'Telangana',
+    addressline6:'501510'
+},
+friends:['abc','xyz','gyh']
+        }
+
+        let mysecondobject={
+            class:'batch-11',
+            course:'FE Dev',
+            techstack:'Mern',
+            address:{
+    addressline1: 'House no.1',
+    addressline2: 'colony',
+    addressline3:'area',
+    addressline4:'Hyd',
+    addressline5:'Telangana',
+    addressline6:'501510'
+},
+friends:['abc','xyz','gyh']//array inside an oject
+        }
+
+        console.log(myobject)
+        console.log(myobject.address.addressline1)//to print a particular element present in object which is also in another object
+        console.log(myobject['address']['addressline2'])//Another way
+        console.log(myobject.friends[0])
+
+let myarray=[myobject,mysecondobject]
+console.log(myarray)
+
+
+//object inside an array
+let newarr=[
+{
+            class:'batch-11',
+            course:'FE Dev',
+            techstack:'Mern',
+            address:{
+    addressline1: 'House no.1',
+    addressline2: 'colony',
+    addressline3:'area',
+    addressline4:'Hyd',
+    addressline5:'Telangana',
+    addressline6:'501510'
+},
+friends:['abc','xyz','gyh']
+        },
+        {
+            class:'batch-11',
+            course:'FE Dev',
+            techstack:'Mern',
+            address:{
+    addressline1: 'House no.1',
+    addressline2: 'colony',
+    addressline3:'area',
+    addressline4:'Hyd',
+    addressline5:'Telangana',
+    addressline6:'501510'
+},
+friends:['abc','xyz','gyh']
+        }
+]
+console.log(newarr)
+
+//object inside array inside object
+let myobject2={
+            class:'batch-11',
+            course:'FE Dev',
+            techstack:'Mern',
+            address:{
+    addressline1: 'House no.1',
+    addressline2: 'colony',
+    addressline3:'area',
+    addressline4:'Hyd',
+    addressline5:'Telangana',
+    addressline6:'501510'
+},
+friends:[
+    {
+        name:'friend1',
+        class:'b1',
+        age:'21'
+    },{
+
+        name:'friend2',
+        class:'b2',
+        age:'21'
+    },{
+
+        name:'friend3',
+        class:'b1',
+        age:'21'
+    }
+]
+        }
+
+        console.log(myobject2)
+        console.log(myobject2.friends[1].class)
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

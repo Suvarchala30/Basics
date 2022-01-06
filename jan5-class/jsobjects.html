@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Objects</title>
+    <script>
+let mrunal={
+    batch:'Batch 11',
+    course: 'FE Dev',
+    place: 'India',
+    friends:['abc','efg','xyz']
+}
+//return the key value pairs as elements in the form of an array - object.entries
+console.log(Object.entries(mrunal))
+
+
+//for in - goes through all keys,objects
+
+for (x in mrunal){
+console.log(x + ' : ' + mrunal[x])
+}
+
+//for of - Iterating through arrays/strings
+for (x of mrunal.friends){
+console.log(x)
+}
+
+for (x of mrunal.place){
+console.log(x)
+}
+
+for (x in mrunal.course){ //returns indices
+console.log(x)
+}
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Object js</title>
+</head>
+<body>
+    <p id="h1"></p>
+    <h1 id="h2"></h1>
+    <script>
+        let arr=[1,2,3]
+        document.getElementById('h1').innerText=arr //array can be directly converted to string
+
+        //If we try to give any object to document.get... it returns o/p as [object Object]
+
+        let mydetails={
+            name:'suvarchala',
+            place:'hyd',
+            course:'webdev'
+        }
+        document.getElementById('h2').innerText=mydetails//this doesn't work
+        document.getElementById('h2').innerText=JSON.stringify(mydetails)
+        
+    </script>
+</body>
+</html>
