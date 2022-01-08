@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Objects 4</title>
+    <script>
+        let a={
+            abc:'abc',
+            def:() => {
+                console.log('def')
+            }
+        }
+        function log(currentobject,newproperty,newvalue){
+            currentobject[newproperty]=newvalue
+            console.log(currentobject)
+        }
+        log(a,'ghi','jkl')
+
+        const ar=[2,4,5]
+        ar[0]=50
+        ar.push(10)
+        //ar=[3] - returns error
+        console.log(ar)//Doesn't return error
+
+        // const a='abc'
+        // a='def'
+        // console.log(a) - Returns error
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

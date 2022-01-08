@@ -12,7 +12,7 @@
             prime:[11,2,3,5,18,66,45,23,55,76,34,21,9,97,56],
             check: function(){
                 let arr=this.prime
-                let newarr=[]
+                let primearr=[]
                 let nonprime=[]
                 
                 for(let j=1;j<=arr.length;j++){
@@ -27,11 +27,11 @@
                         nonprime.push(arr[j-1])
                     }
                     else if(count==2){
-                        newarr.push(arr[j-1])                                                                  
+                        primearr.push(arr[j-1])                                                                  
                     }
             }
 
-            console.log(newarr)
+            console.log(primearr)
             console.log(nonprime)
 
         }

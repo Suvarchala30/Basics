@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Object Constructors</title>
+    <script>
+        // let person={
+        //     course:'FE Dev',
+        //     batch:'batch 11',
+        //     techstack:'Mern'
+        // }
+        // let person1={
+        //     course:'BE Dev',
+        //     batch:'batch 12',
+        //     techstack:'Mean'
+        // } - Default way to create multiple objects
+            //Constructors are methods used to give initial values to the objects
+
+            function student(course,batch,techstack){
+                this.course=course
+                this.batch=batch
+                this.techstack=techstack
+            }
+
+            let person=new student('course1','batch 1','mern')
+            console.log(person)
+
+            let person1=new student('course2','batch 2','mern2')
+            console.log(person1)
+
+//Inbuild constructors
+            let y=new Number(5)
+            console.log(y)
+            console.log(y.valueOf())
+            console.log(typeof(y))
+
+         let yy=new Number('abc')//Returns NAN - type is object for all these
+         let z=new String('javascript')
+         let x=new Boolean(true)
+         console.log(yy,z)   
+         console.log(x.valueOf(),typeof(x))
+let zz=new Number(true)
+console.log(zz) //returns 1
+
+         let a=3 ** 2
+         console.log(a)
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

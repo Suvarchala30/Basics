@@ -1,40 +1,73 @@
-function merge(arr,left,middle,right){
+// Javascript by default uses insertion Sort
 
+function merge(nums,left,middle,right){
 
-    var n1=middle-left+1;
-    var n2=right-middle;
+    var n1 = middle-left +1;//3
+    var n2 = right - middle;//3
 
-    var L=new Array(n1)
-    var R=new Array(n2);
+    var L = new Array(n1);
+    var R = new Array(n2);
 
     for(var i=0;i<n1;i++){
-        L[i]=arr[left+i]
+        L[i] = nums[left+i]
     }
     for(var i=0;i<n2;i++){
-
+        R[i] = nums[middle + 1 + i]
     }
+
+    console.log(L,R)
+
+    var i = 0;
+    var j = 0;
+
+    var k = left;
 
     while(i<n1 && j<n2){
+        if(L[i]<=R[j]){
+            nums[k] = L[i]
+            i++
+        }else{
+            nums[k] = R[j]
+            j++
+        }
+        k++
+    }
 
+
+    while(i<n1){
+        nums[k] =L[i]
+        i++
+        k++
+    }
+    while(j<n2){
+        nums[k] = R[j]
+        j++
+        k++
     }
 }
-function dividearr(arr,left,right){
+
+function divideArr(nums,left,right){
+    
     if(left>=right){
         return;
     }
-    var middle = left + parseInt((right+left)/2); //used to avoid any exemptions
-    //var mid=(right+left)/2 - Alternate method
 
-    dividearr(arr,left,middle);
-    dividearr(arr,middle+1,right);
-    mergersort(nums,left,middle,right);
+    var middle = left + parseInt((right-left)/2);
 
+    divideArr(nums,left,middle);
+    divideArr(nums,middle+1,right);
+
+    merge(nums,left,middle,right);
+
+    // var mid = (right +left) /2;
 }
-function mergersort(arr){
+function mergeSort(nums){
 
-    dividearr(arr,0,arr.length -1)
-    console.log(arr)
+    divideArr(nums,0,nums.length-1)
+    console.log(nums)
 }
 
-let arr=[5,3,7,4,8,2,1]
-mergersort(arr)
+let nums = [12,11,13,5,7,6]
+mergeSort(nums)
+
+// Decreasing the time complexity but increasing the space complexity
