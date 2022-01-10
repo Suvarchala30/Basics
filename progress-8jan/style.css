@@ -23,7 +23,7 @@ body{
     display: flex;
     justify-content: space-between;
     position: relative;
-    margin-bottom: 100%;
+    margin-bottom: 10%;
     width: 350px;
 }
 
@@ -63,12 +63,38 @@ body{
     z-index: -1;
 }
 .circle.active{
-    border: #3498db;
+    border-color: #3498db;
 }
 
 .btn{
     background-color: #3498db;
-    border-radius: 5px;
-    box-shadow: none;
-    border-bottom: none;
+    color: #fff;
+    border: 0;
+    border-radius: 6px;
+    cursor: pointer;
+    font-family: inherit;
+    padding: 8px 30px;
+    margin: 5px;
+    font-size: 14px;
+}
+.btn:active{
+    transform: scale(0.98);
+}
+.btn:disabled{
+    cursor: not-allowed;
+    background-color: #e0e0e0;
+}
+.progress-container::before{
+    content: '';
+    background-color: #e0e0e0;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    height: 4px;
+    width: 100%;
+    z-index: -1;
+}
+.btn:focus{
+    outline: 0;
 }

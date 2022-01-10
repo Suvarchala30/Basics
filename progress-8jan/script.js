@@ -50,6 +50,6 @@ function updateCss(){
     //calculate width
     //set progress bar width- formula
     const widthxyz=(activexyz.length-1)/(circles.length-1)*100
-    progressb.style.width=widthxyz
+    progressb.style.width=widthxyz+ "%"
     enableDisable()
 }
