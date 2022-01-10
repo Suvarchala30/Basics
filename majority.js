@@ -12,7 +12,7 @@ function major(arr,n)
      else
      store[arr[i]]=1;
      if(store[arr[i]]>reqfreq){
-         console.log(store)
+         //console.log(store)
          return arr[i]
      }
  }

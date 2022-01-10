@@ -26,3 +26,8 @@ for(var i=0;i<btnsxyz.length;i++){
 
     playSound(buttonxyz)
 }
+
+
+document.querySelector(".stop").addEventListener("click",function(){
+stopSounds()
+})
