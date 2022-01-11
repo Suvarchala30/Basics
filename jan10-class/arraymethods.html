@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array Methods</title>
+    <script>
+        arr=[22,14,6,8,23]
+        for(let x in arr){
+            console.log(x + ' Value is ' + arr[x])
+        }
+    function abc(value,index){//value and index are arguments not keywords anything can be used
+        console.log(index + ' - ' + value)
+    }
+    arr.forEach(abc)
+    //Above and below are same
+    arr.forEach(function def(value,index){//first parameter is value of array and 2nd is index
+        if(index==1)//if we want only particular value or index
+        console.log(index +' - '+value)
+    })
+
+    let str=[5,7,7,6,1,1,1,1,1]
+    console.log(str.filter(function def(value){
+        return value ===1 //returns all 1
+    }))
+
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
