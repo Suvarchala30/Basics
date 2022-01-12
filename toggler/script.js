@@ -5,7 +5,7 @@ const toggles=document.querySelectorAll(".toggle")
 
 toggles.forEach((toggle)=>
     toggle.addEventListener("change",(e)=>{
-        console.log(e)
+        //console.log(e)
         transitionfunc(e.target)
     })
 )
