@@ -13,17 +13,19 @@
                 str.push(value)
             }
         })
+console.log(str)
 
+//using filter array method print non duplicate items
+        
 
+        let abc=[2,4,1,5,2,6,7,7]
+        let newArr=abc.filter((e,i)=>{
+            return abc.indexOf(e)===abc.lastIndexOf(e)//comparing 2's in the array and filter returns empty if the value is false
+        })
 
-        let strs=[2,4,1,5,2,6,7]
-        //using filter array method print non duplicate items
-        console.log()
-        console.log(strs.filter(function x(value){
-            if(value != 2)
-            return value
-            
-        }))
+        console.log(newArr)
+
+        //main diff bw filter and foreach is filter returns based on a particular condition, foreach just iterates through the array
     </script>
 </head>
 <body>

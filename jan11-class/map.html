@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Map</title>
+    <script>
+        arr=[2,3,4,5,6]
+let newArr=arr.map(function (value){
+    value=value+2
+    return value
+})
+console.log(newArr)
+
+arrs=[2,3,4,5,6]
+let newArrs=arrs.forEach(function (value){
+    value=value+2
+    return value
+})
+console.log(newArrs)//In forEach return doesn't work
+
+
+ar=[2,3,4,5,6]
+let newAr=ar.forEach(function (value){
+    value=value+2
+    return value
+})
+console.log(newAr)//in filter values cannot be modified but can be compared with conditions
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
