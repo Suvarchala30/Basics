@@ -7,6 +7,7 @@
     <title>Map</title>
     <script>
         arr=[2,3,4,5,6]
+        console.log(arr)
 let newArr=arr.map(function (value){
     value=value+2
     return value
@@ -22,7 +23,7 @@ console.log(newArrs)//In forEach return doesn't work
 
 
 ar=[2,3,4,5,6]
-let newAr=ar.forEach(function (value){
+let newAr=ar.filter(function (value){
     value=value+2
     return value
 })

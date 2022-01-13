@@ -1,0 +1,9 @@
+*{
+    box-sizing: border-box;
+}
+.square{
+    background-color: #1d1d1d;
+    box-shadow: 0 0n2px black;
+    height: 16px;
+    width: 16px;
+}
