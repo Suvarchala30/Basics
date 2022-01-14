@@ -199,3 +199,20 @@ p{
     margin: 40px auto 60px auto;
 }
 }
+.table{
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    display: flex;
+}
+
+.table-header{
+    color: black;
+    font-family: "Montserrat", sans-serif;
+    font-size: 1.5em;
+    padding-bottom: 20px;
+}
+.table-body{
+    padding: 5px;
+    color: darkslategray;
+}

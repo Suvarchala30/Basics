@@ -18,8 +18,8 @@ body{
 flex-wrap: wrap;
 }
 .square{
-    height: 16px;
-    width: 16px;
+    height: 26px;
+    width: 26px;
     background-color: #1d1d1d;
     margin: 2px;
     box-shadow: 0 0 2px #000;

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS ES 6</title>
+    <script>
+        let arr1=[3,4,5]
+        let arr2=[1,2]
+        // let parentarr=arr1.concat(arr2)//to add 2 arrays
+        let parentarr=(`${arr1},${arr2}`)//does same as above line
+        console.log(parentarr)
+        //spread operator
+        let a1=[4,5,6]
+        let a2=[1,8,9]
+        let p1r=[...a2,...a1]//spread operator - 3 dots are mandatory and that is the syntax
+        console.log(p1r)
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
