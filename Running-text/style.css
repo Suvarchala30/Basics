@@ -21,4 +21,8 @@ body{
 .speed{
     background-color: darksalmon;
     font-size: 1em;
+    border: none;
+}
+.speed:focus{
+    outline: none;
 }
