@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        //settimeout
+        function sayhello(fn,sn){
+            alert(`Hello ${fn} ${sn}`)
+        }
+        //setTimeout("sayhello('Suvarchala','Reddy')",2000)
+        setTimeout(()=>sayhello("Suv","archala"),2000)//Both are same
+
+
+        //setinterval
+       // function sayHello(fn,sn){
+       //     alert(`Hello ${fn} ${sn}`)
+        //}
+        let val=setInterval(()=>sayhi("suvarchala","Reddy"),3000)
+        let count=0
+        function sayhi(fn,sn){
+            if(count<3){
+                console.log(`Hi ${fn} ${sn}`)
+                console.log(new Date())
+                count++
+            }else{
+                clearInterval(val)
+            }
+        }
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
