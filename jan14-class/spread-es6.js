@@ -1,7 +1,8 @@
 const shradha={
     name:'shradha',
     batch:'batch 11',
-    techstack:'MERN'
+    techstack:'MERN',
+    country:"US"
 }
 console.log(shradha.batch)
 console.log(shradha['name'])//must use '' if we use[]
@@ -27,3 +28,7 @@ const shradha5={
     address:{...address}
 }
 console.log(shradha5)
+console.log(shradha)
+let cobj={...shradha,...address}//whenever there is same key in both objects the last issued value is printed
+console.log(cobj)
+//includes- is used to check whether a string exists or not
