@@ -13,6 +13,7 @@ body{
     justify-content: center;
 text-align: center;
 margin: 0;
+flex-direction: column;
 }
 #heading{
 
@@ -42,7 +43,25 @@ small{
 .todos ul li{
     list-style: none;
 }
-.todos ul li .completed{
+.completed{
     color: #b6b6b6;
     text-decoration: line-through;
+}
+li{
+    border-top: 1px solid #e5e5e5;
+    cursor: pointer;
+    font-size: 1.5rem;
+    padding: 1rem 2rem;
+}
+form#todos {
+    width: 400px;
+}
+.olist{
+    background-color: #fff;
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+    color: #444;
+    text-align: left;
+    width: 400px;
 }
