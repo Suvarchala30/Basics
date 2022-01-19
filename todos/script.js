@@ -2,7 +2,7 @@ const form=document.getElementById("todos")
 const inputel=document.getElementById("todo")
 const todosul=document.getElementById("olist")
 
-const todos=JSON.parse(localStorage.getItem("olist"))
+const todos=JSON.parse(localStorage.getItem("todos"))
 if(todos){
     todos.forEach(todo=>addTodo(todo))
 }
@@ -19,10 +19,14 @@ function addTodo(todo){
     }
     if(todotext){
 
-        let todoel=document.createElement("li")
+        const todoel=document.createElement("li")
+
+        if(todo && todo.isCompleted){
+            todoel.classList.add("completed")
+        }
         todoel.innerText=todotext
 
-        todoel.addEventListener("click",(e)=>{
+        todoel.addEventListener("click",()=>{
             todoel.classList.toggle("completed")
             updateLS()
         })
@@ -39,7 +43,7 @@ function addTodo(todo){
     }
 }
 function updateLS(){
-    const todoels=document.querySelectorAll(".li")
+    const todoels=document.querySelectorAll("li")
     const todos = []
     todoels.forEach(todoel=>{
         todos.push({
