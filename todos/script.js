@@ -2,7 +2,7 @@ const form=document.getElementById("todos")
 const inputel=document.getElementById("todo")
 const todosul=document.getElementById("olist")
 
-const todos=JSON.parse(localStorage.getItem("todos"))
+const todos=JSON.parse(localStorage.getItem("todostring"))
 if(todos){
     todos.forEach(todo=>addTodo(todo))
 }
@@ -51,6 +51,6 @@ function updateLS(){
             isCompleted:todoel.classList.contains("completed")
         })
     })
-    localStorage.setItem("todos",JSON.stringify(todos))
+    localStorage.setItem("todostring",JSON.stringify(todos))
 
 }
