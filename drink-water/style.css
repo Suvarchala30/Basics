@@ -78,6 +78,7 @@ small{
 .smallcups.full{
     background-color: #6ab3f8;
     color: white;
+    transition: 0.3s ease;
 }
 .percentage{
     background-color: #6ab3f8;
@@ -89,4 +90,5 @@ small{
   height: 0;
   width: 100%;
   transition: 0.3s ease;
+  
 }
