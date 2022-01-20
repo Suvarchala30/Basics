@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,600&display=swap');
+*{
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    height: 100vh;
+    align-items: center;
+    text-align: center;
+    background-color: #3494e4;
+    font-family: "Montserrat",sans-serif;
+    flex-direction: column;
+}
+.heading-1{
+    color: white;
+    font-weight: bold;
+    font-size: 2em;
+    margin: 10px 0;
+}
+p{
+    color:white;
+    font-weight: 400;
+    font-size: 1.17em;
+}
+.bigcup{
+    display: flex;
+    flex-direction: column;
+    height: 330px;
+    width: 150px;
+    border: 4px solid #144fc6;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    margin: 30px auto;
+    background-color: white;
+    border-radius: 0 0px 40px 40px;
+    color: #144fc6;
+    overflow: hidden;
+}
+span{
+    color: #144fc6;
+    font-weight: bold;
+    margin: auto;
+text-align: center;
+margin: 0 40px;
+}
+small{
+    color: #144fc6;
+    text-align: center;
+}
+.smallcups{
+    height: 95px;
+    width: 50px;
+    background-color: white;
+    border-radius: 0 0 15px 15px;
+    border:4px solid #144fc6;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    margin: 5px;
+}
+.cups{
+    display: flex;
+    flex-wrap: wrap;
+    width: 280px;
+    margin: auto;
+    justify-content: center;
+}
+.smallcups:hover{
+    cursor: pointer;
+}
+.remained{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex: 1;
+}
+.smallcups.full{
+    background-color: #6ab3f8;
+    color: white;
+}
+.percentage{
+    background-color: #6ab3f8;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  font-size: 30px;
+  height: 0;
+  width: 100%;
+  transition: 0.3s ease;
+}
