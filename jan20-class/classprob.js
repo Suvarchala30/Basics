@@ -11,6 +11,7 @@ let studentice=inputArray.map(student => {
     if(student.likesIceCream)
     return student.name
 })
+console.log(studentice)
 let studentlikeicecream=studentice.filter(value=>{
    
     return value
@@ -18,9 +19,9 @@ let studentlikeicecream=studentice.filter(value=>{
 console.log(studentlikeicecream)
 
 
-//first map then filter
+//first  filter then map
 let xx=inputArray.filter(student => student.likesIceCream)
-console.log(xx)
+//console.log(xx)
 let yy=xx.map(student => student.name)
 console.log(yy)
 
