@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        setInterval(() => {
+    //document.getElementById("time").innerText=Date()
+    //document.getElementById("time").innerText=new Date().toLocaleDateString('en-US') -  Prints nrml date en-english us-united states
+    document.getElementById("time").innerText=new Date().toLocaleDateString('hi-IN')//hi-hindi in-india more arguments need to be given just google
+}, 1000);
+    </script>
+</head>
+<body>
+    <div id="time"></div>
+</body>
+</html>
