@@ -5,8 +5,8 @@
   <title>Videos</title>
 <script>
 
-let time=document.getElementsyClassName("total")
-let max=document.getElementsyClassName("")
+let time=document.getElementsByClassName("total")
+let max=document.getElementsByClassName("")
 
 </script>
 
@@ -191,6 +191,36 @@ let max=document.getElementsyClassName("")
   <div class='total'></div>
 <script>
   //your code here
+  const timenodes=Array.from(document.querySelectorAll("[data-time]"))
+  //console.log(timenodes)
+  const times=timenodes.map(node=>
+  node.dataset.time
+  )
+  console.log(times)
+
+  const seconds=times.map(nodes => {
+  const newarr=nodes.split(":")
+  const mins=parseInt(newarr[0])
+  const secs=parseInt(newarr[1])
+  return (mins*60)+secs
+  })
+  console.log(seconds)
+
+  const totalsec=seconds.reduce((total,elements) => {
+    return total+elements
+  })
+  console.log(totalsec)
+
+  const hours=Math.floor(totalsec/3600)
+  let secleft=totalsec%3600
+  console.log(hours)
+  //console.log(secleft)
+
+  const minutes=Math.floor(secleft/60)
+  secleft= secleft%60
+  console.log(minutes)
+  console.log(secleft) 
+  document.querySelector(".total").innerHTML=`${hours}:${minutes}:${secleft}`
 </script>
 </body>
 </html>
