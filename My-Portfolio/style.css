@@ -1,0 +1,284 @@
+@import url("https://fonts.googleapis.com/css2?family=Merriweather&family=Montserrat&family=Roboto&family=Sacramento&display=swap");
+body{
+    font-family: "Montserrat",sans-serif;
+}
+@media screen and (min-width:731px){
+.header-section{
+    background-image: url("images/back.jpg");
+    background-size: cover;
+    background-position: center center;
+    height: 80vh;
+}
+.banner{
+    display: flex;
+    align-items: center;
+    height: 70%;
+}
+.myphoto{
+    height: 350px;
+    width: 300px;
+    border-radius: 50%;
+}
+.navi-items{
+    margin: auto;
+}
+.nav-link{
+    color: white;
+    font-size: 20px;
+}
+.navbar-brand{
+    font-size: 40px;
+font-weight: bold;
+color: white;
+}
+h1.heading-1 {
+    color: cyan;
+    font-size: 70px;
+    font-weight: bold;
+    margin: 30px;
+}
+
+h2.heading-1 {
+    margin: 30px;
+}
+
+
+.social {
+    margin: 30px;
+}
+.fab{
+    font-size: 25px;
+    color: white;
+    margin: 10px;
+}
+.navigation{
+    padding: 30px 0;
+}
+.heading-1{
+    color: white;
+}
+.about-me{
+    padding: 50px 0;
+}
+.about-section{
+    display: flex;
+    padding: 30px 0;
+}
+.aboutmeimage{
+    height: 450px;
+    width: 450px;
+    border-radius: 10px;
+    
+}
+#dots{
+    font-size: 22px;
+}
+.heading-2{
+color: blue;
+font-weight: bold;
+font-family: "Roboto",sans-serif;
+text-align: center;
+}
+span#dots {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}
+
+.hline {
+    width:50px;
+    opacity: 1;
+    border: 2px solid violet;
+}
+
+span#dot {
+    font-size: 87px;
+    margin-top: -74px;
+    color:violet;
+    margin-left:-5px;
+    margin-right:-5px
+}
+.heading-3{
+    font-weight: bold;
+    font-family: "Roboto",sans-serif;
+    letter-spacing: 1px;
+}
+#exp-image{
+    height: 450px;
+    width: 550px;
+    border-radius: 3px;
+}
+.exp-section{
+    display: flex;
+}
+.work-exp{
+    background-image: url("images/back2.jpg");
+    background-size: cover;
+    background-position: center center;
+    padding: 150px 0;
+
+}
+hr.hline2 {
+    width: 231px;
+    opacity: 1;
+    border: 3px solid yellow;
+    /* color: white; */
+}
+
+h2.my-work {
+    color: white;
+}
+p.exp-desc {
+    color: white;
+    width: 90%;
+}
+.yellow{
+    color: orange;
+}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width:730px){
+
+
+img.myphoto {
+    height:120px;
+    width:100px;
+
+border-radius:50%
+}
+.header-section{
+    background-image: url("images/back.jpg");
+    background-size: cover;
+    background-position: center center;
+    height: 40vh;
+}
+
+h1.heading-1 {
+    color: cyan;
+    font-weight: bold;
+
+}
+.banner{
+    display: flex;
+    align-items: center;
+    height: 70%;
+}
+.nav-link{
+    color: white;
+    font-size: 15px;
+    padding: 2.5px;
+}
+.navbar-brand{
+font-weight: bold;
+color: white;
+}
+h2.heading-1 {
+    color: white;
+    font-size: 15px;
+}
+.fab{
+    font-size: 25px;
+    color: white;
+    margin: 10px;
+}
+div#navbarSupportedContent {
+    /* z-index: 5; */
+    position: absolute;
+    background-color: gray;
+    width: 100%;
+    left: 0;
+    top: 100%;
+    top: 10;
+    padding: 10px;
+}
+img.aboutmeimage {
+    width: 200px;
+    height: 200px;
+    display: flex;
+    margin: auto auto 30px auto;
+}
+span#dots {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}
+
+.hline {
+    width:50px;
+    opacity: 1;
+    border: 2px solid violet;
+}
+
+span#dot {
+    font-size: 87px;
+    margin-top: -74px;
+    color:violet;
+    margin-left:-5px;
+    margin-right:-5px
+}
+.about-me{
+    padding: 50px 10px;
+}
+.heading-2{
+    color: blue;
+    font-weight: bold;
+    font-family: "Roboto",sans-serif;
+    text-align: center;
+    }
+    .work-exp{
+        background-image: url("images/back2.jpg");
+        background-size: cover;
+        background-position: center center;
+        padding: 50px 0;
+    
+    }
+    img#exp-image {
+        width: 300px;
+        display: flex;
+        margin: auto;
+    }
+
+    hr.hline2 {
+        width: 231px;
+        opacity: 1;
+        border: 3px solid yellow;
+        /* color: white; */
+    }
+    
+    h2.my-work {
+        color: white;
+    }
+    p.exp-desc {
+        color: white;
+    }
+    .yellow{
+        color: orange;
+    }
+    
+}
+
+
+
+
+
+
+.navbar-toggler:focus {
+    outline:none;
+    box-shadow:none;
+}
+b{
+    font-family: sans-serif;
+}
