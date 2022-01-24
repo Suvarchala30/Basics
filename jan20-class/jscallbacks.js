@@ -18,7 +18,7 @@ function fun3(){
 fun1(fun2)
 fun1(fun3)
 
-fun2()
+//fun2()
 
 // fun1(function (){
 //     console.log("I function 2")
