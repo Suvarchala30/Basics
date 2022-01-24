@@ -46,7 +46,7 @@ h2.heading-1 {
 .social {
     margin: 30px;
 }
-.fab{
+.icon{
     font-size: 25px;
     color: white;
     margin: 10px;
@@ -135,6 +135,101 @@ p.exp-desc {
 .yellow{
     color: orange;
 }
+h1.heading-4 {
+    text-align: center;
+    color: lightcoral;
+    font-weight: bold;
+}
+div#projects {
+    padding: 100px 0;
+}
+th.table-header {
+    font-weight: bold;
+    color: orangered;
+    border: none;
+}
+td.table-body {
+    border: none;
+}
+table.table {
+    text-align: center;
+}
+td.table-body {
+    font-weight: bold;
+}
+.hline1{
+    width:50px;
+    opacity: 1;
+    border: 2px solid navy;
+}
+#dot1{
+    font-size: 87px;
+    margin-top: -74px;
+    color:navy;
+    margin-left:-5px;
+    margin-right:-5px
+}
+div#skillname {
+    width: 10%;
+    color: white;
+}
+
+.progress {
+    width: 90%;
+}
+
+.skill-bar {
+    display: flex;
+    margin: 50px;
+}
+.hline3{
+    width:50px;
+    opacity: 1;
+    border: 2px solid peachpuff;
+}
+#dot2{
+    font-size: 87px;
+    margin-top: -74px;
+    color:peachpuff;
+    margin-left:-5px;
+    margin-right:-5px
+}
+h1.heading-5 {
+    text-align: center;
+    color: palegoldenrod;
+    font-weight: bold;
+}
+.skills{
+    background-image: url("images/back3.jpg");
+    background-size: cover;
+    background-position: center center;
+    padding: 150px 0;
+}
+div#getintouch {
+    padding: 100px 50px;
+    text-align: center;
+}
+
+h2.head3 {
+    font-weight: bold;
+    color: crimson;
+    margin-bottom: 30px;
+}
+
+h3.para3 {
+    font-size: 20px;
+    /* margin: 10px; */
+    margin: 40px;
+}
+
+a.btn3 {
+    background-color: black;
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+    border-radius: 3px;
+    /* margin: 10px; */
+}
 }
 
 
@@ -189,7 +284,7 @@ h2.heading-1 {
     color: white;
     font-size: 15px;
 }
-.fab{
+.icon{
     font-size: 25px;
     color: white;
     margin: 10px;
@@ -267,7 +362,81 @@ span#dot {
     .yellow{
         color: orange;
     }
+    div#projects {
+        padding: 50px 10px;
+    }
+    h1.heading-4 {
+        text-align: center;
+        color: lightcoral;
+        font-weight: bold;
+    }
+    .hline1{
+        width:50px;
+        opacity: 1;
+        border: 2px solid navy;
+    }
+    #dot1{
+        font-size: 87px;
+        margin-top: -74px;
+        color:navy;
+        margin-left:-5px;
+        margin-right:-5px
+    }
+    .hline3{
+        width:50px;
+        opacity: 1;
+        border: 2px solid peachpuff;
+    }
+    #dot2{
+        font-size: 87px;
+        margin-top: -74px;
+        color:peachpuff;
+        margin-left:-5px;
+        margin-right:-5px
+    }
+    h1.heading-5 {
+        text-align: center;
+        color: palegoldenrod;
+        font-weight: bold;
+    }
+    .skill-bar {
+        margin: 20px 10px;
+    }
+    .skills{
+        background-image: url("images/back3.jpg");
+        background-size: cover;
+        background-position: center center;
+        padding: 50px 0;
+    }
+    div#skillname {
+        
+        color: white;
+    }
+    div#getintouch {
+        padding: 50px 0px;
+        text-align: center;
+    }
     
+    h2.head3 {
+        font-weight: bold;
+        color: crimson;
+        margin-bottom: 30px;
+    }
+    
+    h3.para3 {
+        font-size: 20px;
+        /* margin: 10px; */
+        margin: 40px;
+    }
+    
+    a.btn3 {
+        background-color: black;
+        color: white;
+        text-decoration: none;
+        padding: 10px;
+        border-radius: 3px;
+        /* margin: 10px; */
+    }
 }
 
 
