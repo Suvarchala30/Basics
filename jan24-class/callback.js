@@ -3,8 +3,7 @@ const f1 =(callback) => {
     console.log('Order placed')
     setTimeout(()=>{
         console.log('Order received')
-        console.log('Chef started preparing')
-        
+        console.log('Chef started preparing')        
         setTimeout(()=>{
             console.log('Pizza sauce added')
             setTimeout(()=>{
