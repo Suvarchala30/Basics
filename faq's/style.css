@@ -18,14 +18,14 @@ width: 800px;
 border-radius: 10px;
 font-weight: bold;
 font-size: 1.3em;
-}
-.aicon{
-    float: right;
+margin: 20px;
 }
 .answer{
     display: none;
 }
-.answer .active{
+.aicon{
+    float: right;
+}
+.active{
     display: block;
-    transform: rotateZ(180deg);
 }
