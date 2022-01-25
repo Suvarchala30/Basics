@@ -50,7 +50,7 @@ body{
     position: absolute;
     top: 0;
     left: 0;
-    /* transition */
+    transition: 0.3s ease-in-out
 }
 .left-slide>div{
     width: 100%;
@@ -67,6 +67,7 @@ body{
     width: 65%;
     position: absolute;
     top:0;
+    transition: 0.3s ease-in-out;
 }
 .right-slide>div{
     width: 100%;
