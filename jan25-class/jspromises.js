@@ -1,4 +1,5 @@
 /*
+Promise is to handle asynchronous code
 Promises has 4 states:
 Pending
 resolves
@@ -43,6 +44,8 @@ promise.then(function(resolvedmsg){
 })
 .catch(function(rejectmsg){
     console.log('This promise was rejected, with the message',rejectmsg)
+}).finally(function(){
+    console.log('This will be executed always')
 })
 
 
