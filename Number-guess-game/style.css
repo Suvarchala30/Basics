@@ -1,0 +1,50 @@
+*{
+    font-family: sans-serif;
+}
+body{
+    height: 100vh;
+    text-align: center;
+    width: 50%;
+    margin: 0 auto;
+}
+.form{
+    display: inline-grid;
+}
+h1{
+    background-color: #7b3056;
+    color: white;
+    width: 750px;
+    text-align: center;
+}
+p{
+    font-size: 20px;
+}
+#wrapper{
+    background-color: #12aab4;
+    color: white;
+    text-align: center;
+    width: 750px;
+    height: 550px;
+}
+#guess{
+    font-size: 50px;
+}
+#guessField{
+    width: 550px;
+    height: 100px;
+    text-align: center;
+    border: 5px solid #14727d;
+    font-size: 50px;
+}
+#subt{
+    background-color: yellow;
+    color: black;
+    width: 350px;
+    height: 50px;
+    text-align: center;
+    margin: 0 auto;
+    font-size: 30px;
+    border-radius: 25px;
+    border: none;
+    margin-top: 50px;
+}
