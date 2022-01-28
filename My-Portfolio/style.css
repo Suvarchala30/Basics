@@ -2,7 +2,7 @@
 body{
     font-family: "Montserrat",sans-serif;
 }
-@media screen and (min-width:731px){
+@media screen and (min-width:1025px){
 .header-section{
     background-image: url("images/back.jpg");
     background-size: cover;
@@ -235,6 +235,206 @@ a.btn3 {
 
 
 
+@media screen and (min-width: 531px) and (max-width:1024px){
+    img.myphoto {
+        height:220px;
+        width:180px;
+    
+    border-radius:50%
+    }
+    .header-section{
+        background-image: url("images/back.jpg");
+        background-size: cover;
+        background-position: center center;
+        height: 40vh;
+    }
+    .about-section {
+        display: flex;
+    }
+    
+    .container.exp-section {
+        display: flex;
+    }
+    h1.heading-1 {
+        color: cyan;
+        font-weight: bold;
+        font-size: 60px;
+    
+    }
+    .banner{
+        display: flex;
+        align-items: center;
+        height: 70%;
+    }
+    .nav-link{
+        color: white;
+        font-size: 15px;
+        padding: 2.5px;
+    }
+    .navbar-brand{
+    font-weight: bold;
+    color: white;
+    font-size: 30px;
+    }
+    h2.heading-1 {
+        color: white;
+        font-size: 25px;
+    }
+    .icon{
+        font-size: 25px;
+        color: white;
+        margin: 10px;
+    }
+    div#navbarSupportedContent {
+        /* z-index: 5; */
+        position: absolute;
+        background-color: gray;
+        width: 100%;
+        left: 0;
+        top: 100%;
+        top: 10;
+        padding: 10px;
+    }
+    img.aboutmeimage {
+        width: 200px;
+        height: 200px;
+        display: flex;
+        margin: auto auto 30px auto;
+    }
+    span#dots {
+        display: flex;
+        text-align: center;
+        justify-content: center;
+    }
+    
+    .hline {
+        width:50px;
+        opacity: 1;
+        border: 2px solid violet;
+    }
+    
+    span#dot {
+        font-size: 87px;
+        margin-top: -74px;
+        color:violet;
+        margin-left:-5px;
+        margin-right:-5px
+    }
+    .about-me{
+        padding: 50px 10px;
+    }
+    .heading-2{
+        color: blue;
+        font-weight: bold;
+        font-family: "Roboto",sans-serif;
+        text-align: center;
+        }
+        .work-exp{
+            background-image: url("images/back2.jpg");
+            background-size: cover;
+            background-position: center center;
+            padding: 50px 0;
+        
+        }
+        img#exp-image {
+            width: 300px;
+            display: flex;
+            margin: auto;
+        }
+    
+        hr.hline2 {
+            width: 231px;
+            opacity: 1;
+            border: 3px solid yellow;
+            /* color: white; */
+        }
+        
+        h2.my-work {
+            color: white;
+        }
+        p.exp-desc {
+            color: white;
+        }
+        .yellow{
+            color: orange;
+        }
+        div#projects {
+            padding: 50px 10px;
+        }
+        h1.heading-4 {
+            text-align: center;
+            color: lightcoral;
+            font-weight: bold;
+        }
+        .hline1{
+            width:50px;
+            opacity: 1;
+            border: 2px solid navy;
+        }
+        #dot1{
+            font-size: 87px;
+            margin-top: -74px;
+            color:navy;
+            margin-left:-5px;
+            margin-right:-5px
+        }
+        .hline3{
+            width:50px;
+            opacity: 1;
+            border: 2px solid peachpuff;
+        }
+        #dot2{
+            font-size: 87px;
+            margin-top: -74px;
+            color:peachpuff;
+            margin-left:-5px;
+            margin-right:-5px
+        }
+        h1.heading-5 {
+            text-align: center;
+            color: palegoldenrod;
+            font-weight: bold;
+        }
+        .skill-bar {
+            margin: 20px 10px;
+        }
+        .skills{
+            background-image: url("images/back3.jpg");
+            background-size: cover;
+            background-position: center center;
+            padding: 50px 0;
+        }
+        div#skillname {
+            
+            color: white;
+        }
+        div#getintouch {
+            padding: 50px 0px;
+            text-align: center;
+        }
+        
+        h2.head3 {
+            font-weight: bold;
+            color: crimson;
+            margin-bottom: 30px;
+        }
+        
+        h3.para3 {
+            font-size: 20px;
+            /* margin: 10px; */
+            margin: 40px;
+        }
+        
+        a.btn3 {
+            background-color: black;
+            color: white;
+            text-decoration: none;
+            padding: 10px;
+            border-radius: 3px;
+            /* margin: 10px; */
+        }
+
+}
 
 
 
@@ -244,8 +444,7 @@ a.btn3 {
 
 
 
-
-@media screen and (max-width:730px){
+@media screen and (max-width:530px){
 
 
 img.myphoto {
