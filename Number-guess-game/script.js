@@ -8,7 +8,7 @@ const loworHi=document.querySelector(".loworHi")
 let previousGuesses=[]
 let numGuesses=0
 let random=parseInt(Math.random()*100+1)
-console.log(random)
+//console.log(random)
 let maxGuesses=10
 submit.addEventListener("click",(e)=>{
     e.preventDefault()
