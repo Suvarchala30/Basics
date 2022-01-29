@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rolling Dice Game</title>
+    <style>
+        table,tr,td{
+            border: 1px solid black;
+            border-collapse: collapse;
+        }
+    </style>
+</head>
+<body>
+    <h1>Dice Rolls Game</h1>
+    
+    <label for="gridSize">Grid Size</label>
+    <input type="number" name="gridSize" id="gridSize">
+    <br>
+    <label for="playerCount">No. of Players</label>
+    <input type="number" id="playerCount" name="playerCount">
+    <br>
+    <button id="submit" value="submit">Start</button>
+    <br><br>
+    <table id="card">
+        <thead>
+            <tr>
+                <td>Player Number</td>
+                <td>Dice Roll</td>
+                <td>Dice Roll History</td>
+                <td>Path (Position History)</td>
+                <td>Winner Status</td>
+            </tr>
+        </thead>
+        <tbody id="card-body">
+            
+        </tbody>
+    </table>
+
+    <script src="script.js"></script>
+</body>
+</html>
