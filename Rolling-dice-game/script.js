@@ -44,6 +44,8 @@ submit.addEventListener("click",function (){
             if(maxReach>=gridSize*gridSize){
                 break;
             }
+            }else{
+                playerStats[i].path.push(playerStats[i].reach)
             }
 
             
