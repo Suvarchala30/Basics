@@ -35,20 +35,7 @@ let students=[
 ]
 //Return an array with total marks
 // //Expected output[261,258,325]
-// let arr=students.map((value)=>{
-//     return value.marks
-// })
-// console.log(arr)
-// let newarr= arr.map((value)=>{
-//     return Object.values(value)
-// })
-// console.log(newarr)
-// let finalarr=newarr.map((value)=>{
-//     return value.reduce((total,element)=>{
-//         return Number(total)+Number(element)
-//     })
-// })
-// console.log(finalarr)
+
 let arr=students.map((value)=>{
     return Object.values(value.marks)
 })
@@ -59,3 +46,19 @@ let finalarr=arr.map((value)=>{
     })
 })
 console.log(finalarr)
+
+//Another method
+let studentsTotalMarks=students.map((student)=>{
+    let total=0
+    for (subject in student.marks){
+        total = total+Number(student.marks[subject])
+    }
+    return total
+})
+console.log(studentsTotalMarks)
+//Method-3
+let studentmarks=students.map((student)=>{
+    let {english,maths,science,hindi,social}=student.marks
+    return Number(english)+Number(maths)+Number(science)+Number(hindi)+Number(social)
+})
+console.log(studentmarks)
