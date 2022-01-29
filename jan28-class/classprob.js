@@ -46,8 +46,18 @@ let students = [
   ]
   /* Q -  Return an array of student names who secured > 30 marks in all subjects
     Expected O/P: ['Lakshman']
-    */
-   const arr=students.map((value)=>{
-       return Object.values(value.marks)
-   })
-   console.log(arr)
+  //   */
+  let arr=[]
+  students.forEach((value,index)=>{
+   let y= Object.values(value.marks).every((value)=>{
+      
+        return value>30
+      
+    })
+
+    //console.log(y)
+    if(y==true){
+    arr.push(value.name)
+    }
+  })
+  console.log(arr)
