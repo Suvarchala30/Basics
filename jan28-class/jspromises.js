@@ -17,7 +17,7 @@ let promise3=new Promise((resolve,reject)=>{
 Promise.all([promise1,promise2,promise3]).then((resolvedmsg)=>{
    console.log(resolvedmsg)
 })
-//Promises.any -> Consolidates all promises ; .then works right after even one promise is resolved, faster settimeout is only returned test by commenting above .all method
+//Promises.any -> Consolidates all promises ; .then works right after even one promise is resolved, faster settimeout is only returned. Test by commenting above .all method
 Promise.any([promise1,promise2,promise3]).then((resolvedmsg)=>{
     console.log(resolvedmsg)
 })

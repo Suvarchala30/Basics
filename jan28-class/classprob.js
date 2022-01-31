@@ -48,16 +48,31 @@ let students = [
     Expected O/P: ['Lakshman']
   //   */
   let arr=[]
-  students.forEach((value,index)=>{
+  students.forEach((value)=>{
    let y= Object.values(value.marks).every((value)=>{
       
         return value>30
       
     })
 
-    //console.log(y)
     if(y==true){
     arr.push(value.name)
     }
   })
+  console.log(arr.toString())
   console.log(arr)
+
+
+  //Method 2
+  let step1=students.map(student => {
+    let {english,maths,science,hindi,social}=student.marks
+    if(Number(english)>30 && Number(maths)>30 && Number(science)>30 && Number(hindi)>30 && Number(social)>30){
+      return student.name
+    }
+  })
+  //console.log(step1)
+
+  let studentWhoPassed=step1.filter(student =>{
+    return student
+  })
+  console.log(studentWhoPassed)
