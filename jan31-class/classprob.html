@@ -11,15 +11,15 @@
     <form>
         <input type="text" placeholder="Type your email address" id="textValue">
         <button type="submit" onclick="f1()">Submit</button>
+        <p id="demo"></p>
     </form>
     <script>
-        let recValue=document.getElementById("textValue").value
-        console.log(recValue)
         function f1(){
-            if(recValue.includes('@')){
-                console.log("Success")
-            }else{
-                console.log("failed")
+            let recValue=document.getElementById("textValue").value
+        
+            if(!recValue.includes("@")){
+                
+                alert("Please enter @ symbol")
             }
         }
     </script>
