@@ -36,13 +36,19 @@
             4. Should not start with special character and do not contain any special character except @
             5. shouln't have space
             */
+            var letterNumber = /^[0-9a-zA-Z]+$/;
             if(emailInput.indexOf('@') === -1)
             alert('Email not valid - @ missing!')
+            if(emailInput.indexOf('.') === -1)
+            alert('Email not valid - "." missing!')
             else if(emailInput.indexOf('@')<1)
             alert('Email not valid - atleast 1 char required before @ symbol')
             else if(emailInput.length - emailInput.lastIndexOf('.')<=2)
             alert('Email not valid - After dot there should be min 2 chars')
-            
+            else if(emailInput.includes(' '))
+            alert('Email not valid - should not contain space')
+            else if(!(emailInput[0].match(letterNumber)))
+            alert('1st character can only be alphabet')
         }
 
     </script>
