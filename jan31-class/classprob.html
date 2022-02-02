@@ -14,14 +14,37 @@
         <p id="demo"></p>
     </form>
     <script>
-        function f1(){
-            let recValue=document.getElementById("textValue").value
+        // function f1(){
+        //     let recValue=document.getElementById("textValue").value
         
-            if(!recValue.includes("@")){
+        //     if(!recValue.includes("@")){
                 
-                alert("Please enter @ symbol")
-            }
+        //         alert("Please enter @ symbol")
+        //     }
+        // }
+
+        //regular expression - let x=a.match(/is/gi) g-> global, i-> case-insensitive
+//Another method
+        function f1(){
+            let emailInput=document.getElementById("textValue").value
+            /*
+            a@gmail.co.in
+            1. @ symbol should be present
+            2. Atleast one char before @ symbol
+            3. After dot, there should be atleast 2 char present
+            [Additional checks]:
+            4. Should not start with special character and do not contain any special character except @
+            5. shouln't have space
+            */
+            if(emailInput.indexOf('@') === -1)
+            alert('Email not valid - @ missing!')
+            else if(emailInput.indexOf('@')<1)
+            alert('Email not valid - atleast 1 char required before @ symbol')
+            else if(emailInput.length - emailInput.lastIndexOf('.')<=2)
+            alert('Email not valid - After dot there should be min 2 chars')
+            
         }
+
     </script>
 </body>
 </html>
