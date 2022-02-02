@@ -1,31 +1,21 @@
 async function abc(){
-    return 'abc'
-}
-console.log(abc())//Returns a promise resolved object
 
-async function def(){
-    try{
-        if(1<2){
-            throw 'False value'
-        }
-    }catch(error){
-        return error
-    }
-}
-console.log(def())
-
-async function x(){
+    console.log('abc() function strated')
+    await new Promise(function (resolve,reject){
+        
     setTimeout(function(){
-        return 'Resolved after 3 seconds'
+        resolve('Resolved after 3 seconds')
     },3000)
+})
+console.log('There was a promise which was resolved in 3s')
+return '[Promise returnd from abc()]'
 }
+
 
 async function display(){
-    let resolvedmsg=await x()//await keyword always should be used within async
-    return resolvedmsg
-}
-display().then(function(resolvedmsg){
+    console.log('Display function strated')
+    let resolvedmsg=await abc()//await keyword always should be used within async
     console.log(resolvedmsg)
-}).catch(function(rejectedMsg){
-    return rejectedMsg
-})
+    console.log('Display function ended')
+}
+display()

@@ -27,16 +27,11 @@
 //Another method
         function f1(){
             let emailInput=document.getElementById("textValue").value
-            /*
-            a@gmail.co.in
-            1. @ symbol should be present
-            2. Atleast one char before @ symbol
-            3. After dot, there should be atleast 2 char present
-            [Additional checks]:
-            4. Should not start with special character and do not contain any special character except @
-            5. shouln't have space
-            */
-            var letterNumber = /^[0-9a-zA-Z]+$/;
+            
+
+            let indexOfa=emailInput.indexOf('@')
+
+            //var letterNumber = /^[0-9a-zA-Z]+$/;
             if(emailInput.indexOf('@') === -1)
             alert('Email not valid - @ missing!')
             if(emailInput.indexOf('.') === -1)
@@ -45,12 +40,24 @@
             alert('Email not valid - atleast 1 char required before @ symbol')
             else if(emailInput.length - emailInput.lastIndexOf('.')<=2)
             alert('Email not valid - After dot there should be min 2 chars')
+            //else if(emailInput.indexOf(' ')!= -1)
             else if(emailInput.includes(' '))
             alert('Email not valid - should not contain space')
-            else if(!(emailInput[0].match(letterNumber)))
-            alert('1st character can only be alphabet')
+            else if(emailInput[indexOfa-1]==='.'||emailInput[indexOfa-1]==='-'||emailInput[indexOfa-1]==='_')
+            alert('Email not valid - Atleast one char after after these -,_,.')
+            // else if(!(emailInput[0].match(letterNumber)))
+            // alert('1st character can only be alphabet')
         }
-
+/*
+            a@gmail.co.in
+            1. @ symbol should be present
+            2. Atleast one char before @ symbol
+            3. After dot, there should be atleast 2 char present
+            [Additional checks]:
+            4. Should not start with special character and do not contain any special character except @
+            5. Atleast one chat after these -,_,@
+            6. shouln't have space
+            */
     </script>
 </body>
 </html>
