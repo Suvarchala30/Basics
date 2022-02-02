@@ -30,7 +30,6 @@ button{
 .box{
     position: relative;
     border-radius: 50%;
-    background-color: red;
     width: 100px;
     height: 100px;
 }
