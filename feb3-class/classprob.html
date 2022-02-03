@@ -5,52 +5,55 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Form Validation with Javascript</title>
-    
+    <style>
+        span{
+            font-size: 0.7em;
+        }
+    </style>
     
 </head>
 <body>
-    <form>
-        <input type="text" placeholder="Type your email address" id="textValue">
-        <button type="submit" onclick="f1()">Submit</button>
-    
+    <form id="form1">
+        <input type="text" placeholder="Type your email address" id="textValue"><br>
+        <span id="input-info"></span><br>
+        <button type="button" onclick="f1()" id="submit-button">Submit</button>
+        
     </form>
     <script>
-        // function f1(){
-        //     let recValue=document.getElementById("textValue").value
-        
-        //     if(!recValue.includes("@")){
-                
-        //         alert("Please enter @ symbol")
-        //     }
-        // }
 
-        //regular expression - let x=a.match(/is/gi) g-> global, i-> case-insensitive
-//Another method
+document.getElementById("form1").addEventListener("submit",function(e){
+                e.preventDefault()
+            });
         function f1(){
-            let emailInput=document.getElementById("textValue").value
-            
 
+            let emailInput=document.getElementById("textValue").value
+            let ans=''
+            let inputDisplay=document.getElementById("input-info")
             let indexOfa=emailInput.indexOf('@')
 
-            //var letterNumber = /^[0-9a-zA-Z]+$/;
+            inputDisplay.style.color="red"
             if(emailInput.indexOf('@') === -1)
-            alert('Email not valid - @ missing!')
+            ans='Email not valid - @ missing'
             else if(emailInput.indexOf('.') === -1)
-            alert('Email not valid - "." missing!')
+            ans = 'Email not valid - "." missing!'
             else if(emailInput.indexOf('@')<1)
-            alert('Email not valid - atleast 1 char required before @ symbol')
+            ans = 'Email not valid - atleast 1 char required before @ symbol'
             else if(emailInput.length - emailInput.lastIndexOf('.')<=2)
-            alert('Email not valid - After dot there should be min 2 chars')
-            //else if(emailInput.indexOf(' ')!= -1)
+            ans='Email not valid - After dot there should be min 2 chars'
             else if(emailInput.includes(' '))
-            alert('Email not valid - should not contain space')
+            ans='Email not valid - should not contain space'
             else if(emailInput[indexOfa-1]==='.'||emailInput[indexOfa-1]==='-'||emailInput[indexOfa-1]==='_')
-            alert('Email not valid - Atleast one char after after these -,_,.')
+            ans='Email not valid - Atleast one char after after these -,_,.'
             else if(emailInput.charCodeAt(0)<97 || emailInput.charCodeAt(0)>122)
-                alert('1st character can only be small alphabet or number')
+                ans='1st character can only be small alphabet or number'
             // else if(!(emailInput[0].match(letterNumber)))
             // alert('1st character can only be alphabet')
-                
+                else{
+                ans='Valid email address'
+                inputDisplay.style.color="green"
+                }
+
+                inputDisplay.innerText=ans
         }
 /*
             a@gmail.co.in
@@ -62,6 +65,12 @@
             5. Atleast one chat after these -,_,@
             6. shouln't have space
             */
+/*
+Passowrd strength
+            password 
+0-4chars==weak
+4-7chars==good
+7+chars==strong*/
     </script>
 </body>
 </html>
