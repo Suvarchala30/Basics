@@ -6,6 +6,10 @@ const cSelect=document.getElementById("computerSelect")
 const message=document.getElementById("message")
 const submit=document.getElementById("submit")
 
+const rock=document.getElementById("rock")
+const paper=document.getElementById("paper")
+const scissors=document.getElementById("scissors")
+
 let playerScore = 0;
 let computerScore = 0;
 
@@ -20,3 +24,5 @@ submit.addEventListener("click",function(){
     submit.style.display="none"
     gameActive=true;
 })
+
+rock.addEventListener("click",)
