@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password Strength</title>
+    <style>
+        #answer{
+            font-size: 0.9em;
+        }
+    </style>
+</head>
+<body>
+    <form id="form1">
+        <input type="text" id="password" placeholder="Enter your Password">
+        <button type="button" onclick="validate()">Submit</button>
+        <div id="answer"></div>
+    </form>
+    <script>
+        /*
+Password strength
+            password 
+0-4chars==weak
+4-7chars==good
+7+chars==strong*/
+document.getElementById("form1").addEventListener("submit",(e)=>{
+    e.preventDefault()
+})
+function validate(){
+        let recPass=document.getElementById("password").value
+    let answer=document.getElementById("answer")
+    answer.style.color="red"
+    if(recPass.length<=4)
+    answer.innerText="Password Too Weak"
+    else if(recPass.length>4 && recPass.length<=7)
+    answer.innerText="Password Strength Good"
+    else if(recPass.length>7){
+    answer.innerText="Password Strength is Strong"
+    answer.style.color="green"
+ 
+    }
+
+
+
+}
+    </script>
+</body>
+</html>

@@ -113,10 +113,13 @@ function whoWon(){
     if(gameFinished()){
         if(playerScore==5){
             message.innerText='Player is the winner! Congratulations!'
+            message.style.color="green"
         }else{
             message.innerText='Computer is the winner! You Lose'
+            message.style.color="red"
         }
         reset()
+        
     }
 }
 
