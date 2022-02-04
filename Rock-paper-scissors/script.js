@@ -13,7 +13,6 @@ const scissors=document.getElementById("scissors")
 let playerScore = 0;
 let computerScore = 0;
 
-let gameActive = false;
 
 submit.addEventListener("click",function(){
     const board=document.getElementById("boards")
@@ -22,7 +21,7 @@ submit.addEventListener("click",function(){
     board.style.display="block"
     select.style.display="block"
     submit.style.display="none"
-    gameActive=true;
+
 })
 
 rock.addEventListener("click",()=> gameFlow(rock.id))

@@ -12,3 +12,10 @@ html,body{
 #playerSide,#computerSide{
     height: 250px;
 }
+
+
+#playerSelect{
+    right: 50%;
+    left: 80%;
+    transition: 0.5s ease-in-out;
+}
