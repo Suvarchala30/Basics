@@ -13,9 +13,9 @@
 </head>
 <body>
     <form id="form1">
-        <input type="text" id="password" placeholder="Enter your Password">
-        <button type="button" onclick="validate()">Submit</button>
-        <div id="answer"></div>
+        <input type="password" id="password" placeholder="Enter your Password" onkeydown="validate()">
+        <button type="button">Submit</button>
+        <div id="password-info"></div>
     </form>
     <script>
         /*
@@ -29,16 +29,20 @@ document.getElementById("form1").addEventListener("submit",(e)=>{
 })
 function validate(){
         let recPass=document.getElementById("password").value
-    let answer=document.getElementById("answer")
-    answer.style.color="red"
-    if(recPass.length<=4)
-    answer.innerText="Password Too Weak"
-    else if(recPass.length>4 && recPass.length<=7)
-    answer.innerText="Password Strength Good"
-    else if(recPass.length>7){
-    answer.innerText="Password Strength is Strong"
-    answer.style.color="green"
- 
+let passwordInfo=document.getElementById("password-info")
+    
+
+    if(recPass.length<=4){
+    passwordInfo.innerText="Weak"
+    passwordInfo.style.color="red"
+    }
+    else if(recPass.length>4 && recPass.length<7){
+    passwordInfo.innerText="Good"
+    passwordInfo.style.color="violet"
+    }
+    else if(recPass.length>=7){
+    passwordInfo.innerText="Strong"
+    passwordInfo.style.color="green"
     }
 
 
