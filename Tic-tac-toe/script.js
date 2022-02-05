@@ -14,7 +14,10 @@ function showMessage(msg){
     message.innerHTML=`<h3>${msg}</h3>`
 }
 function updateActivePlayer(){
-
+    if(activePlayer===0)
+    activePlayer=1
+    else
+    activePlayer=0
 }
 function initializeGame(){
     player1=document.getElementById("player1").value
@@ -35,8 +38,7 @@ function initializeGame(){
         div.addEventListener("click",function (){
 
             if(!div.innerText){
-                div.innerText=activePlayer===0 ? "x"
-: "o";
+                div.innerText=activePlayer===0 ? "x" : "o";
 updateActivePlayer();
 setTimeout(
     showMessage(`${activePlayer === 0 ? player1 : player2}, you're up`),1000

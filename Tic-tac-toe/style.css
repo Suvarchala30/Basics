@@ -40,6 +40,9 @@ button:active, button:focus{
     outline: none;
     border: 2px solid #e15e32;
 }
+button:hover{
+    background-color: #ece9e9;
+}
 .game{
     display: none;
     flex-wrap: wrap;
