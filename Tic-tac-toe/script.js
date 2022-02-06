@@ -37,12 +37,16 @@ function initializeGame(){
 
         div.addEventListener("click",function (){
 
-            if(!div.innerText){
+            if(!div.innerText && playGame){
                 div.innerText=activePlayer===0 ? "x" : "o";
+                const winner=checkWinner()
+
+if(!winner){
 updateActivePlayer();
-setTimeout(
-    showMessage(`${activePlayer === 0 ? player1 : player2}, you're up`),1000
-) ;
+    showMessage(`${activePlayer === 0 ? player1 : player2}, you're up`)
+}
+    else
+    showMessage(`${activePlayer === 0 ? player1 : player2}, Congratulations you won!`)
            };
         })
 game.appendChild(div);
@@ -61,7 +65,32 @@ const winningSequences =[
     [2,4,6]
 ]
 function checkWinner(){
-    
+
+    let winnerBoll=false
+
+    for(let i=0;i<winningSequences.length;i++){
+        const winningCombo=winningSequences[i]
+
+        const cell1=document.getElementById(winningCombo[0]+1)
+
+        const cell2=document.getElementById(winningCombo[1]+1)
+
+        const cell3=document.getElementById(winningCombo[2]+1)
+        const val1=cell1.innerText
+        const val2=cell2.innerText
+        const val3=cell3.innerText
+
+        if(val1===val2 && val2===val3 && val3!=''){
+            winnerBoll=true
+            playGame=false
+
+            cell1.style.backgroundColor="green"
+            cell2.style.backgroundColor="green"
+            cell3.style.backgroundColor="green"
+            break
+        }
+    }
+    return winnerBoll
 }
 
 submit.addEventListener("click",initializeGame)
