@@ -1,6 +1,3 @@
-
-
-
 function decimaltobinary(num){
     let binarystr = ""
 
