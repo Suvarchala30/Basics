@@ -2,17 +2,16 @@
 function fun1(){
     let a=2
     let b=4
-    document.write(a+b)
+    console.log(a+b)
 }
 //function call
 fun1()
 
-document.write(1)
-document.write(2)
+console.log(1)
+console.log(2)
 fun1()
-document.write(3)
-document.write(4)
+console.log(3)
+console.log(4)
 fun1()
-document.write(5)
-document.write(6)
-document.write(7)
+console.log(5)
+console.log(6)

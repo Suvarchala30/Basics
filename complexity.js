@@ -3,6 +3,7 @@
 // Time C - tells you how long an algorithm with take
 
 let arr = [1,3,5,7,9,11,12,5,6]
+let arr2=[1,3,5,7,9,11,12,5,6]
 
 // check if 6 exists in arr or not
 

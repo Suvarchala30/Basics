@@ -5,17 +5,18 @@ function decimaltobinary(num){
 
         let rem = num%2;
          //Method 1
-        //binarystr=rem.toString() + binarystr
+        binarystr=rem.toString() + binarystr
 
     //Method 2
-    binarystr=binarystr+rem.toString()
+    //binarystr=binarystr+rem.toString()
+    
         num=Math.floor(num/2)
     }
     //Method 1
-    //return binarystr
+    return binarystr
 
     //Method 2
-    return binarystr.split("").reverse().join("")
+    //return binarystr.split("").reverse().join("")
 }
 console.log(decimaltobinary(8))
 
