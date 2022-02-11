@@ -9,7 +9,7 @@ try{
     let a=10/0
     console.log(a)//infinity
 }catch(error){
-//console.log(error)//prints the reason of error
+console.log(error)//prints the reason of error
 }
 console.log("End of the code")
 
