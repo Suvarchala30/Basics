@@ -1,4 +1,4 @@
-let x=[4,6,8,8,3]
+let x=[4,6,8,8,36]
 //using .some from given list of elements find atleast one element which is prime them return true else false
 
 let y=x.some((v)=>{

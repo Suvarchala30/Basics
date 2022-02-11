@@ -18,7 +18,7 @@ else
 console.log(false)//Returns true if entire array is even else false
 
 let flags=false
-let x=[1,3,5,7,9]
+let x=[1,3,5,7,90]
 //Return yes if there exists atleast one even
 let xy=x.forEach((value)=>{
     if(value%2==0)
