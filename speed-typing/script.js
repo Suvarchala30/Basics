@@ -41,8 +41,6 @@ async function getQuotes(){
         console.log(error)
     }
     startTime=new Date()
-    let datet=new Date()
-    let secs=datet.getSeconds()
     timer.innerText=0
     setInterval(()=>{
 
@@ -51,6 +49,7 @@ async function getQuotes(){
 }
 function getTimerTime() {
     return Math.floor((new Date() - startTime) / 1000)
+    
   }
   
 function newQuote(){
