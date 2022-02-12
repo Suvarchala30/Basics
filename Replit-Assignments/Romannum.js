@@ -17,9 +17,11 @@ function convertToRoman(num) {
     //your code here
     var ans=" "
     for (var k of Object.keys(symbols)){  //k is key
+      //console.log(symbols[k])
         var times=Math.floor(num/symbols[k])
-
+//console.log(times)
         num=num-times*symbols[k]
+        //console.log(num)
         ans=ans+k.repeat(times)
     }
   return ans;
