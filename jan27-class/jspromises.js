@@ -20,4 +20,4 @@ promise.then(function(resolvedmsg){
     return promise2
 }).then(function(resolvedmsg){
     console.log(resolvedmsg)
-})//this is execute promise 2 only after promise 1 is executed
+})//this executes promise 2 only after promise 1 is executed

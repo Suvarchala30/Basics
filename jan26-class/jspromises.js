@@ -37,8 +37,8 @@ return new Promise((resolve,reject)=>{
 })
 }
 getStudentData()//this doesn't return studentdata
-getStudentData().then(function (studentData){
-    console.log(studentData)
+getStudentData().then(function (studentD){
+    console.log(studentD)
 })//if we need data we must use .then method
 
 

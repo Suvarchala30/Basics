@@ -17,7 +17,7 @@ async function display1(){
         console.log('Promise2 rejected with message - ',rejectmsg)
     }
 }
-//console.log(display1())//returns promise pending so we use below method
+console.log(display1())//returns promise pending so we use below method
 let resolvedmsg=display1()
 setTimeout(function(){
     console.log('From main thread',resolvedmsg)

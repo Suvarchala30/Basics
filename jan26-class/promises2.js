@@ -27,4 +27,5 @@ const getStudentData=()=>{
         })
     }).then(function (student){
         console.log(student[0].name)
+        console.log(student[0].batch)
      })

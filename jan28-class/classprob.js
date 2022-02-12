@@ -70,7 +70,7 @@ let students = [
       return student.name
     }
   })
-  //console.log(step1)
+  console.log(step1)
 
   let studentWhoPassed=step1.filter(student =>{
     return student
