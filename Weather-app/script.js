@@ -45,10 +45,6 @@ window.addEventListener('load',()=>{
 
         })
        
-    }else{
-        let errorstatement=document.createElement("h1")
-        errorstatement.textContent='Hey please enable location!'
-        temperatureDescription.appendChild(errorstatement)
     }
 
 })
