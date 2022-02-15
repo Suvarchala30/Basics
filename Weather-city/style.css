@@ -1,0 +1,91 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient(cadetblue,skyblue);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.location, .temperature{
+    display: flex;
+    height: 30vh;
+    width: 100%;
+    justify-content: space-around;
+    align-items: center;
+}
+.temperature{
+    flex-direction: column;
+}
+.degree-sec{
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+.degree-sec span{
+    margin: 10px;
+    font-size: 30px;
+}
+.degree-sec h2{
+    font-size: 40px;
+}
+.temperature-description {
+    text-transform: capitalize;
+    font-size: 20px;
+    color: orangered;
+}
+img {
+    width: 125px;
+    font-weight: bolder;
+}
+.degree-sec div {
+    margin-bottom:38px;
+    font-weight:bold;
+    
+}
+.container {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+   box-shadow:  0px 0px 23px 5px darkslategray;
+   padding-top: 30px;
+   background-color: lavender;
+}
+form.form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+label {
+    font-size: 35px;
+}
+
+input#city-input {
+    width: 350px;
+    height: 30px;
+    margin-top: 20px;
+}
+input#city-input:focus{
+    outline: none;
+}
+button {
+    margin: 30px;
+    width: 80px;
+    height: 24px;
+    background-color: darkcyan;
+    color: white;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
