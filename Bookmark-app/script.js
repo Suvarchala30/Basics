@@ -25,15 +25,15 @@ submitBtn.addEventListener("click",(e)=>{
       adr=adr.replace(/http:\/\/|https:\/\//i, "");
       arrayItems.length--;
 
-      for(item of arrayItems){
-      itemAdr=item.split(',')[1].replace(/http:\/\/|https:\/\//i, "");
-      if(itemAdr==adr){
-      check=true
+    for(item of arrayItems){
+        itemAdr = item.split(',')[1].replace(/http:\/\/|https:\/\//i,"");
+        if(itemAdr == adr){
+          check = true;
+        }
       }
-    }
-    
-      if(check==true){
-      alert('URL Already bookmarked')
+        
+      if(check == true){
+        alert("This website is already bookmarked");
       }
       else{
           localStorage.bookmark+=`${siteName.value},${siteUrl.value}`
@@ -56,7 +56,7 @@ function addBookmark(name, url){
                 <span>${name}</span>
                 <a class="visit" href="${url}" target="_blank"
                     data-link='${dataLink}'>Visit</a>
-                <a onclick="removeBookmark(this)"
+                <a onclick="removethislink(this)"
                     class="delete" href="#">delete</a>
                 </div>`;
     bookmarkSection.innerHTML += item;
