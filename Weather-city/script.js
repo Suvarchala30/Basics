@@ -5,10 +5,13 @@ let temperatureDescription=document.querySelector(".temperature-description")
 let iconDisplay=document.querySelector("p")
 let degreeSection=document.querySelector(".degree-sec")
 let tempSpan=document.querySelector(".degree-sec span")
+const location1=document.querySelector(".location")
+const temperature1=document.querySelector(".temperature")
 const submitBtn=document.querySelector("button")
 submitBtn.addEventListener("click",(e)=>{
     e.preventDefault()
-
+location1.style.display="flex"
+temperature1.style.display="flex"
     const api=`https://api.openweathermap.org/data/2.5/weather?q=${cityName.value}&appid=926f13b904025165c90f4e69fd80ea72`
     fetch(api).then(response => response.json())
     .then(data => {

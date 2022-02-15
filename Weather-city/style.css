@@ -15,7 +15,7 @@ body{
     background-size: cover;
 }
 .location, .temperature{
-    display: flex;
+    display: none;
     height: 30vh;
     width: 100%;
     justify-content: space-around;
