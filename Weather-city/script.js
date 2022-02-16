@@ -12,7 +12,9 @@ submitBtn.addEventListener("click",(e)=>{
     e.preventDefault()
 location1.style.display="flex"
 temperature1.style.display="flex"
-    const api=`https://api.openweathermap.org/data/2.5/weather?q=${cityName.value}&appid=926f13b904025165c90f4e69fd80ea72`
+const mykey='926f13b904025165c90f4e69fd80ea72'
+//https://api.openweathermap.org/data/2.5/weather?q=${inputVal}&appid=${apiKey}&units=metric
+    const api=`https://api.openweathermap.org/data/2.5/weather?q=${cityName.value}&appid=${mykey}&units=metric`
     fetch(api).then(response => response.json())
     .then(data => {
         console.log(data)
@@ -27,20 +29,17 @@ temperature1.style.display="flex"
                 locationTimezone.innerHTML=`${name}/${country}`
                 iconDisplay.innerHTML=`<img src='${icons}'>`
 
-                const celsius=(temp-32)*(5/9);
-                const fahrenheit=(celsius*1.8)+32;
-                degreeSection.addEventListener("click",function(){
-                    if(tempSpan.textContent==='F'){
-                        tempSpan.textContent='C'
 
-                    temperatureDegree.innerHTML=celsius
-                    }else{
-                        tempSpan.textContent='F'
-                        temperatureDegree.innerHTML=fahrenheit
-                    }
+        degreeSection.addEventListener("click",()=>{
+            if(tempSpan.innerHTML=="C"){
+                tempSpan.innerHTML="F"
+            }else{
+                tempSpan.innerHTML="C"
+            }
+        })
 
     })
 
     cityName.value=''
 })
-})
+//(0°C × 9/5) + 32 = 32°F
