@@ -27,7 +27,20 @@ window.addEventListener('load',()=>{
                 temperatureDescription.innerHTML=description
                 locationTimezone.innerHTML=`${name}/${country}`
                 iconDisplay.innerHTML=`<img src='${icons}'>`
-
+                const celsius=temp;
+                console.log(celsius)
+                const fahrenheit=(celsius*(9/5))+32;
+                console.log(fahrenheit)
+                
+                    degreeSection.addEventListener("click",()=>{
+                        if(tempSpan.innerHTML=="C"){
+                            tempSpan.innerHTML="F"
+                            temperatureDegree.innerHTML=fahrenheit
+                        }else{
+                            tempSpan.innerHTML="C"
+                            temperatureDegree.innerHTML=celsius
+                        }
+                    })
             })
 
         })

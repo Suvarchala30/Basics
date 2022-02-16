@@ -15,6 +15,7 @@ temperature1.style.display="flex"
 const mykey='926f13b904025165c90f4e69fd80ea72'
 //https://api.openweathermap.org/data/2.5/weather?q=${inputVal}&appid=${apiKey}&units=metric
     const api=`https://api.openweathermap.org/data/2.5/weather?q=${cityName.value}&appid=${mykey}&units=metric`
+    
     fetch(api).then(response => response.json())
     .then(data => {
         console.log(data)
@@ -29,16 +30,24 @@ const mykey='926f13b904025165c90f4e69fd80ea72'
                 locationTimezone.innerHTML=`${name}/${country}`
                 iconDisplay.innerHTML=`<img src='${icons}'>`
 
-
+    const celsius=temp;
+    console.log(celsius)
+    const fahrenheit=(celsius*(9/5))+32;
+    console.log(fahrenheit)
+    
         degreeSection.addEventListener("click",()=>{
             if(tempSpan.innerHTML=="C"){
                 tempSpan.innerHTML="F"
+                temperatureDegree.innerHTML=fahrenheit
             }else{
                 tempSpan.innerHTML="C"
+                temperatureDegree.innerHTML=celsius
             }
         })
 
+        tempSpan.innerHTML="C"
     })
+    
 
     cityName.value=''
 })
