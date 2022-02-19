@@ -89,3 +89,28 @@ button {
     border-radius: 5px;
     cursor: pointer;
 }
+
+@media screen and (max-width:730px){
+    .location, .temperature{
+        display: none;
+        height: 30vh;
+        width: 90%;
+        justify-content: space-around;
+        align-items: center;
+    }
+    .container {
+        width: 90%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+       box-shadow:  0px 0px 23px 5px darkslategray;
+       padding-top: 30px;
+       background-color: lavender;
+    }
+    input#city-input {
+        width: 250px;
+        height: 30px;
+        margin-top: 20px;
+    }
+}
