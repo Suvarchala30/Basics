@@ -20,6 +20,6 @@ for(let frameindex=1;frameindex<=10;frameindex++){
     }
 }
 
-return score
+console.log(score)
 }
-console.log(bowling(rolls))
+bowling(rolls)
