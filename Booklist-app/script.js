@@ -4,18 +4,15 @@ const isbn=document.querySelector("#isbn")
 const submitBtn=document.querySelector(".btn")
 const booklist=document.querySelector(".result-book")
 
+const items=JSON.parse(localStorage.getItem("listItems"))
 
-
+console.log(items)
 submitBtn.addEventListener("click",(e)=>{
     e.preventDefault()
     updateLS();
 })
-function updateLS(item){
-    let itemtext=booklist.innerHTML
-    if(item){
-        itemtext=item.text
-    }
-
+function updateLS(){
+    
     if(title.value==""&&author.value==""&&isbn.value==""){
         alert("Add the details of book")
     }else{
@@ -35,9 +32,24 @@ function updateLS(item){
         body.appendChild(deleteEl)
 
         booklist.appendChild(body)
+        const itemELs=document.querySelectorAll("tr")
+        const items=[]
+        itemELs.forEach(iteml=>{
+            items.push({
+                text:iteml.innerHTML
+            })
+        })
+        // const items={
+        //     title:titleEl.innerHTML,
+        //     author:authorEl.innerHTML,
+        //     isbn:isbnEl.innerHTML,
+        //     delete:deleteEl.innerHTML
+        // }
+        localStorage.setItem("listItems",JSON.stringify(items))
         deleteEl.addEventListener("click",(e)=>{
             e.preventDefault()
             body.innerText=''
+            localStorage.removeItem("listItems")
         })
         title.value=''
     author.value=''
