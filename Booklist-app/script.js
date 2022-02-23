@@ -4,9 +4,18 @@ const isbn=document.querySelector("#isbn")
 const submitBtn=document.querySelector(".btn")
 const booklist=document.querySelector(".result-book")
 
+
+
 submitBtn.addEventListener("click",(e)=>{
     e.preventDefault()
-    
+    updateLS();
+})
+function updateLS(item){
+    let itemtext=booklist.innerHTML
+    if(item){
+        itemtext=item.text
+    }
+
     if(title.value==""&&author.value==""&&isbn.value==""){
         alert("Add the details of book")
     }else{
@@ -20,11 +29,18 @@ submitBtn.addEventListener("click",(e)=>{
         body.appendChild(authorEl)
         const isbnEl=document.createElement("th")
         isbnEl.innerHTML=isbn.value
+        const deleteEl=document.createElement("th")
+        deleteEl.innerHTML=`<a href="#" class="btn btn-danger btn-sm delete">X</a>`
         body.appendChild(isbnEl)
+        body.appendChild(deleteEl)
 
         booklist.appendChild(body)
+        deleteEl.addEventListener("click",(e)=>{
+            e.preventDefault()
+            body.innerText=''
+        })
         title.value=''
     author.value=''
     isbn.value=''
     }
-})
+}
