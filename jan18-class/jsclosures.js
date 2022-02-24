@@ -30,3 +30,4 @@ const innerfunc=abc()
 console.log(innerfunc());//or below method can be used both returns same
 console.log(abc()())//to call inner function we use ()() - two times
 //Closures: Inner function will have access to all the variables in outer scope even after it has returned
+//The closure is a function that accesses its lexical scope even executed outside of its lexical scope.
