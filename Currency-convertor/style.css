@@ -61,3 +61,32 @@ div#rate {
 #secondInputValue::-webkit-inner-spin-button{
     appearance: none;
     }
+
+    @media screen and (max-width:530px){
+        .container {
+            display: flex;
+            flex-direction: column;
+            height: 100%;
+            justify-content: center;
+            align-items: center;
+            margin-top: 20px;
+        }
+        img#image {
+            height: 100px;
+            width: 120px;
+        }
+        h1.heading {
+            color: lightseagreen;
+            margin: 30px;
+            font-size: 1.5em;
+        }
+        p.description {
+            margin-bottom: 20px;
+            font-size: 0.7em;
+        }
+        .swap-convertor {
+            display: flex;
+            align-items: center;
+            justify-content: space-evenly;
+        }
+    }
