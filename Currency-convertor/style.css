@@ -58,3 +58,6 @@ div#rate {
     font-weight: bold;
     font-size: 1.2em;
 }
+#secondInputValue::-webkit-inner-spin-button{
+    appearance: none;
+    }
