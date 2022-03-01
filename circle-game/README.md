@@ -1,0 +1,1 @@
+A vanilla JS circle game where player should click the circle within 2 seconds for 15 balls. If the click time exceeds 2 seconds game will be failed and need to be played again. Each time a circle would be appearing in a different position with different color.

@@ -1,0 +1,2 @@
+This is a simple expand images project done during by initial days of learning Javascript.
+The projects moto is simple whenever an image is clicked it expands to the maximum and remaining images will be compressed.

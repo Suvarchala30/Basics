@@ -1,0 +1,2 @@
+A tracker of water drank in a day. 
+The project includes 8 small glasses and one big glass. once all 8 small cups are finished the big cup will be filled and confirms that the user has met his/her daily requirement.

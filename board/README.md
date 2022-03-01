@@ -1,0 +1,1 @@
+This a color board which gives a random color on hover and removed after few seconds.
