@@ -1,0 +1,1 @@
+A weather application which gives weather report based on particular city in celsius and Fahrenhiet. It's mobile responsive so weather can be tracked in mobile too.

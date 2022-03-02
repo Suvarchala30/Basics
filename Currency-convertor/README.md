@@ -1,0 +1,1 @@
+This is an often used application by everyone. It converts the Amount from any currency to any currency within seconds and also gives current exchange rate of all countries.

@@ -1,0 +1,1 @@
+A spped typing test used to test the speed of a person typing like in how many seconds does the person type in a given phrase.

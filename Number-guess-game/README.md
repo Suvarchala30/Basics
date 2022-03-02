@@ -1,0 +1,1 @@
+A funny number guess game built using Javascript. One should enter a random between 1 and 100, it will display if it's correct or less than expected or greater than expected number. You have 10 chances to guess a correct number. Try it now!!
