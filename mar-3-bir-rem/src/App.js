@@ -1,6 +1,6 @@
 import React from "react"
 import './App.css';
-import ReactMarkdown from "react-markdown"
+import Birthdays from "./Components/Birthdays"
 
 class App extends React.Component{
   
@@ -8,7 +8,7 @@ class App extends React.Component{
     
     return(
       <div className="App">
-        
+        <Birthdays />
         </div>
     )
   }
