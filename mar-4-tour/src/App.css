@@ -85,5 +85,5 @@ button.delete-btn {
     border-radius: 3px;
     margin: 1.5rem auto;
     display: block;
-    
+    cursor: pointer;
 }
