@@ -104,6 +104,7 @@ h4.author {
 button{
   border:none;
   background:none;
+  cursor: pointer;
 }
 
 button.prev-person {
