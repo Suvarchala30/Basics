@@ -1,0 +1,74 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+.mainBox {
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    padding: 20px;
+    background-color: gray;
+}
+.first {
+    height: 100%;
+    width: 40%;
+    background: lightpink;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+.second-main {
+    display: flex;
+    flex-direction: column;
+    margin-left: 20px;
+    width: 60%;
+}
+.second {
+    width: 100%;
+    height: 50%;
+    background: yellowgreen;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 20px
+}
+.third-main {
+    display: flex;
+    height: 50%;
+    width: 100%;
+}
+.third {
+    height: 100%;
+    width: 50%;
+    background: hotpink;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+.fourth-main {
+    width: 100%;
+    display: grid;
+    margin-left: 20px;
+    height: 100%;
+    grid-gap: 20px;
+}
+.fourth, .fifth{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    background: cadetblue;
+    color: white;
+    font-size: 2.5rem;
+    font-weight: bold;
+}
