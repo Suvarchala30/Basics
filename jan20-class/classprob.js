@@ -21,7 +21,7 @@ console.log(studentlikeicecream)
 
 //first  filter then map
 let xx=inputArray.filter(student => student.likesIceCream)
-//console.log(xx)
+console.log(xx)
 let yy=xx.map(student => student.name)
 console.log(yy)
 

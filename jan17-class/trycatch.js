@@ -18,7 +18,7 @@ console.log("First line of code")
 
 try{
 
-let a=10
+let a=-10
 //some code which is expecting positive value
 if(a<0)
 throw 'Invalid input'//returns this statement

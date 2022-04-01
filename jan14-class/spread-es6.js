@@ -4,6 +4,7 @@ const shradha={
     techstack:'MERN',
     country:"US"
 }
+//console.log(shradha)
 console.log(shradha.batch)
 console.log(shradha['name'])//must use '' if we use[]
 console.log(...shradha.name)//this is acceptable

@@ -1,6 +1,6 @@
 const char1="roadie"
 
-const char2="roadi"
+const char2="rodie"
 let arr=""
 
 
