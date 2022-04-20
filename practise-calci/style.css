@@ -1,0 +1,19 @@
+body {display: flex;flex-direction: column;text-align: center;align-items: center;justify-content: center;height: 100vh;background: lightgray;}
+
+.display {background: white;height: 70px;width: 500px;}
+
+.tabs {background: white;width: 500px;display: flex;flex-wrap: wrap;
+cursor: pointer;
+}
+
+.clear {width: 125px;height: 50px;
+cursor: pointer;}
+
+.digit {width: 125px;height: 50px;
+cursor: pointer;}
+
+.back {width: 125px;height: 50px;
+cursor: pointer;}
+
+.equal {width: 125px;height: 50px;
+cursor: pointer;}
