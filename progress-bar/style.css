@@ -1,0 +1,17 @@
+.bar{
+    width: 0%;
+    height: 30px;
+    background-color: green;
+}
+.my-progress{
+    text-align: center;
+    margin: 300px;
+    
+}
+button.start {
+    margin: 50px;
+}
+.percent {
+    height: 30px;
+    text-align: center;
+}
