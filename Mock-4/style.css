@@ -1,0 +1,15 @@
+.blocks {
+    background-color: rgb(56, 35,18);
+    margin: auto;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    
+   
+}
+.block {
+    
+    height: 189px;
+    margin: 20px;
+   
+    cursor: pointer;
+}
